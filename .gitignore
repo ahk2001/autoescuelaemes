@@ -1,0 +1,11 @@
+# Arquivos internos de pesquisa e coleta (não publicar)
+dados.txt
+dossie_autoescola.md
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.vscode/
+.idea/

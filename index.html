@@ -1,0 +1,3279 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autoescola EMES | El Grao de Castellón · Permisos B, Motos, CAP y Reciclaje</title>
+  <meta name="description" content="Autoescola EMES en el Grau de Castelló (Carrer de Joan d'Àustria, 37). Permiso B coche, motos AM/A1/A2/A, camión C, tráiler C+E, autobús D, CAP y clases de reciclaje. Consulta rápida por WhatsApp." />
+  <meta name="keywords" content="Autoescola EMES, autoescuela Grau de Castelló, autoescuela El Grao de Castellón, permiso B Castellón, motos A2 Castellón, CAP Castellón, clases de reciclaje conducir" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#005CBE" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="supported-color-schemes" content="dark" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Autoescola EMES | Tu carnet en el Grau de Castelló" />
+  <meta property="og:description" content="Trato cercano y familiar, aulas equipadas para test DGT, flota moderna y consulta rápida por WhatsApp en 15 segundos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:image" content="assets/homedesktop.png" />
+
+  <!-- Favicon Oficial -->
+  <link rel="icon" type="image/png" href="assets/logofavicon.png" />
+  <link rel="apple-touch-icon" href="assets/logofavicon.png" />
+  <link rel="shortcut icon" href="assets/logofavicon.png" />
+
+  <!-- Google Fonts: Inter Tight, Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter+Tight:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       1. SISTEMA DE DISEÑO EDITORIAL — AUTOESCOLA EMES
+       ========================================================================== */
+    :root {
+      color-scheme: dark;
+      supported-color-schemes: dark;
+      -webkit-color-scheme: dark;
+      forced-color-adjust: none;
+
+      --emes-blue: #005CBE;
+      --emes-blue-bright: #0061D7;
+      --emes-blue-glow: #3B82F6;
+      --emes-navy: #0B1F3A;
+
+      --emes-red: #E80201;
+      --emes-red-bright: #FD0201;
+      --emes-red-glow: #FF4D4D;
+
+      --emes-dark-deep: #060913;
+      --emes-dark-surface: #0A1020;
+      --emes-dark-card: #0F172A;
+      --emes-dark-elevated: #162038;
+
+      --emes-green: #04BC05;
+      --emes-wa: #25D366;
+      --emes-wa-dark: #1EBE5D;
+
+      --neutral-canvas: #060913;
+      --neutral-border: rgba(255, 255, 255, 0.10);
+
+      --text-black: #FFFFFF;
+      --text-body: #E2E8F0;
+      --text-muted: #94A3B8;
+
+      --font-display: 'Inter Tight', sans-serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+      --container-max: 1280px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-sans);
+      color: var(--text-body);
+      background-color: var(--neutral-canvas);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: clip;
+      line-height: 1.65;
+      background-color: var(--neutral-canvas);
+      color: var(--text-body);
+    }
+
+    main {
+      display: block;
+      width: 100%;
+      position: relative;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.15rem;
+    }
+
+    @media (min-width: 640px) { .container { padding: 0 1.75rem; } }
+    @media (min-width: 768px) { .container { padding: 0 3.5rem; } }
+
+    h1, h2, h3, h4 {
+      color: var(--text-black);
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+    }
+
+    p {
+      color: var(--text-body);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s var(--ease-editorial);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    ul { list-style: none; }
+
+    .section-editorial-padding {
+      padding: 5.5rem 0;
+    }
+
+    @media (min-width: 1024px) {
+      .section-editorial-padding { padding: 7.5rem 0; }
+    }
+
+    /* Cabecera Editorial */
+    .section-editorial-header {
+      max-width: 820px;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-editorial-index {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--emes-blue-glow);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1.1rem;
+    }
+
+    .section-editorial-index::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: var(--emes-red);
+    }
+
+    .section-editorial-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 4.2vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      margin-bottom: 1.15rem;
+    }
+
+    .section-editorial-title em {
+      font-style: normal;
+      color: var(--emes-blue-glow);
+    }
+
+    .section-editorial-desc {
+      font-size: 1.06rem;
+      color: var(--text-muted);
+      line-height: 1.72;
+      max-width: 680px;
+    }
+
+    /* Botones Editoriales */
+    .btn-editorial {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 26px;
+      border-radius: 9999px;
+      font-weight: 800;
+      font-size: 0.94rem;
+      transition: all 0.25s var(--ease-editorial);
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .btn-editorial:active { transform: scale(0.98); }
+
+    .btn-primary-cta {
+      background: var(--emes-red);
+      color: #FFFFFF !important;
+      border: 1.5px solid var(--emes-red);
+      box-shadow: 0 10px 26px rgba(232, 2, 1, 0.28);
+    }
+
+    .btn-primary-cta:hover {
+      background: var(--emes-red-bright);
+      border-color: var(--emes-red-bright);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(253, 2, 1, 0.42);
+    }
+
+    .btn-light-outline {
+      background: rgba(255, 255, 255, 0.08);
+      color: #FFFFFF !important;
+      border: 1.5px solid rgba(255, 255, 255, 0.28);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-light-outline:hover {
+      background: var(--emes-blue);
+      border-color: var(--emes-blue-glow);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0, 92, 190, 0.35);
+    }
+
+    .btn-wa-primary {
+      background: var(--emes-wa);
+      color: #03150B !important;
+      border: 1.5px solid var(--emes-wa);
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.28);
+    }
+
+    .btn-wa-primary:hover {
+      background: #34E376;
+      border-color: #34E376;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(37, 211, 102, 0.42);
+    }
+
+    /* ==========================================================================
+       2. TOP EDITORIAL NAV MINIMALISTA (LOGO + ACCIONES)
+       ========================================================================== */
+    .editorial-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 16px 0;
+      opacity: 0;
+      transform: translateY(-18px);
+      animation: heroNavEnter 1.4s var(--ease-editorial) 0.35s forwards;
+      transition: background 0.4s ease, padding 0.4s ease, border-color 0.4s ease;
+    }
+
+    @keyframes heroNavEnter {
+      from { opacity: 0; transform: translateY(-18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (min-width: 768px) {
+      .editorial-nav { padding: 20px 0; }
+    }
+
+    .editorial-nav.scrolled {
+      background: rgba(6, 9, 19, 0.94);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(0, 92, 190, 0.32);
+      padding: 11px 0;
+    }
+
+    .editorial-nav-inner {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.15rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    @media (min-width: 640px) { .editorial-nav-inner { padding: 0 1.75rem; } }
+    @media (min-width: 768px) { .editorial-nav-inner { padding: 0 3.5rem; } }
+
+    .editorial-brand-link {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+    }
+
+    .editorial-brand-link:hover { transform: translateY(-1px) scale(1.02); }
+
+    .editorial-brand-logo {
+      height: 76px;
+      width: auto;
+      max-width: 280px;
+      object-fit: contain;
+      display: block;
+      transition: height 0.35s ease;
+      filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.45));
+    }
+
+    .editorial-nav.scrolled .editorial-brand-logo { height: 54px; }
+
+    .nav-actions-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-cta-desktop {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .nav-cta-desktop {
+        display: inline-flex;
+        padding: 9px 18px;
+        font-size: 0.85rem;
+      }
+    }
+
+    .editorial-menu-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #FFFFFF;
+      padding: 9px 18px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .editorial-menu-btn:hover {
+      background: var(--emes-blue);
+      border-color: var(--emes-blue-glow);
+      transform: scale(1.03);
+    }
+
+    .editorial-burger-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.14);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3.5px;
+    }
+
+    .editorial-burger-icon span {
+      display: block;
+      width: 10px;
+      height: 1.6px;
+      background: #FFFFFF;
+      border-radius: 1px;
+    }
+
+    @media (max-width: 768px) {
+      .editorial-brand-logo { height: 56px; max-width: 200px; }
+      .editorial-nav.scrolled .editorial-brand-logo { height: 42px; }
+      .editorial-menu-btn { padding: 7px 14px; font-size: 0.84rem; gap: 8px; }
+    }
+
+    /* Fullscreen Overlay Menu */
+    .editorial-overlay-menu {
+      position: fixed;
+      inset: 0;
+      background: rgba(6, 9, 19, 0.98);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      z-index: 1100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s var(--ease-editorial);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 28px 20px 36px;
+      overflow-y: auto;
+    }
+
+    @media (min-width: 768px) {
+      .editorial-overlay-menu { padding: 36px 60px 44px; }
+    }
+
+    .editorial-overlay-menu.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .overlay-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .overlay-close-btn {
+      color: #FFFFFF;
+      font-size: 0.92rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .overlay-close-btn:hover {
+      background: var(--emes-red);
+      border-color: var(--emes-red);
+    }
+
+    .overlay-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      max-width: 720px;
+      margin: auto 0;
+      padding: 1.5rem 0;
+    }
+
+    .overlay-nav-list a {
+      font-family: var(--font-sans);
+      font-size: clamp(1.2rem, 2.7vw, 1.85rem);
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.25;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .overlay-nav-list a span.nav-index {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--emes-blue-glow);
+      font-weight: 700;
+    }
+
+    .overlay-nav-list a:hover {
+      color: #FFFFFF;
+      transform: translateX(8px);
+    }
+
+    .overlay-bottom-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.88rem;
+      color: #94A3B8;
+    }
+
+    /* ==========================================================================
+       3. HERO LIMPIO Y CINEMATOGRÁFICO (ENTRADA ESCALONADA Y DEVAGAR)
+       ========================================================================== */
+    .hero-editorial {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      padding-bottom: clamp(48px, 7.5vh, 84px);
+      padding-top: 110px;
+      background: var(--emes-dark-deep);
+    }
+
+    .hero-bg-stage {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .hero-img-el {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+      filter: brightness(0.82) contrast(1.06);
+      opacity: 0;
+      transform: scale(1.06);
+      animation: heroBgReveal 2.3s var(--ease-editorial) 0.1s forwards;
+    }
+
+    @keyframes heroBgReveal {
+      from { opacity: 0; transform: scale(1.06); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .hero-img-mobile { display: none; }
+    .hero-img-desktop { display: block; }
+
+    @media (max-width: 768px) {
+      .hero-img-desktop { display: none; }
+      .hero-img-mobile { display: block; object-position: center 48%; }
+    }
+
+    .hero-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(
+        to top,
+        rgba(6, 9, 19, 0.94) 0%,
+        rgba(6, 9, 19, 0.60) 34%,
+        rgba(6, 9, 19, 0.20) 64%,
+        rgba(6, 9, 19, 0.10) 100%
+      );
+      pointer-events: none;
+    }
+
+    .hero-editorial-inner {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.15rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-editorial-inner { padding: 0 3.5rem; }
+    }
+
+    .hero-lead-editorial { max-width: 880px; }
+
+    .hero-badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 1.15rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: heroFadeUp 1.4s var(--ease-editorial) 0.7s forwards;
+    }
+
+    .hero-badge-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #E2E8F0;
+      background: rgba(11, 31, 58, 0.78);
+      border: 1px solid rgba(59, 130, 246, 0.42);
+      backdrop-filter: blur(10px);
+      padding: 5px 12px;
+      border-radius: 9999px;
+    }
+
+    .hero-editorial-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.35rem, 5.3vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.03;
+      letter-spacing: -0.035em;
+      color: #FFFFFF;
+      margin: 0 0 1rem 0;
+      text-shadow: 0 4px 28px rgba(0, 0, 0, 0.75);
+      opacity: 0;
+      transform: translateY(32px);
+      animation: heroFadeUp 1.6s var(--ease-editorial) 1.05s forwards;
+    }
+
+    .hero-editorial-title em {
+      font-style: normal;
+      color: var(--emes-blue-glow);
+    }
+
+    .hero-editorial-subtitle {
+      font-size: clamp(1rem, 1.5vw, 1.16rem);
+      color: #CBD5E1;
+      max-width: 620px;
+      margin-bottom: 1.65rem;
+      line-height: 1.65;
+      opacity: 0;
+      transform: translateY(24px);
+      animation: heroFadeUp 1.5s var(--ease-editorial) 1.35s forwards;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      opacity: 0;
+      transform: translateY(22px);
+      animation: heroFadeUp 1.5s var(--ease-editorial) 1.65s forwards;
+    }
+
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero-editorial { padding-bottom: 84px; padding-top: 96px; }
+      .hero-cta-group { flex-direction: column; align-items: stretch; }
+      .hero-cta-group .btn-editorial { width: 100%; }
+    }
+
+    /* ==========================================================================
+       4. SECCIÓN DE MÉTRICAS EDITORIALES
+       ========================================================================== */
+    .metrics-section {
+      background: var(--emes-dark-deep);
+      border-top: 1px solid rgba(0, 92, 190, 0.35);
+      border-bottom: 1px solid var(--neutral-border);
+      padding: 4.25rem 0;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.25rem;
+    }
+
+    @media (min-width: 640px) { .metrics-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .metrics-grid { grid-template-columns: repeat(4, 1fr); gap: 2.75rem; } }
+
+    .metric-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-left: 2px solid rgba(0, 92, 190, 0.45);
+      padding-left: 1.6rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .metric-item:hover { border-left-color: var(--emes-red-glow); }
+
+    .metric-number {
+      font-family: var(--font-display);
+      font-size: 2.45rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.05;
+      margin-bottom: 0.55rem;
+    }
+
+    .metric-number.is-accent { color: var(--emes-blue-glow); }
+
+    .metric-label {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 0.3rem;
+    }
+
+    .metric-sub {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       5. LOS 3 PILARES (GLASSMORPHISM + FONDO ATMOSFÉRICO AZUL EMES)
+       ========================================================================== */
+    .pillars-section {
+      position: relative;
+      background: var(--emes-dark-surface);
+      overflow: hidden;
+      border-bottom: 1px solid var(--neutral-border);
+    }
+
+    .pillars-animated-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .pillars-grid-mesh {
+      position: absolute;
+      inset: -50% 0 -50% 0;
+      background-image:
+        linear-gradient(to right, rgba(0, 92, 190, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 92, 190, 0.08) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse 75% 65% at 50% 50%, #000 35%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 50%, #000 35%, transparent 85%);
+      opacity: 0.85;
+      animation: meshFloat 24s linear infinite;
+    }
+
+    @keyframes meshFloat {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(48px); }
+    }
+
+    .pillars-glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(95px);
+      opacity: 0.24;
+      pointer-events: none;
+    }
+
+    .orb-1 {
+      width: 540px; height: 540px;
+      background: radial-gradient(circle, rgba(0, 92, 190, 0.65) 0%, transparent 72%);
+      top: -15%; left: -10%;
+    }
+
+    .orb-2 {
+      width: 580px; height: 580px;
+      background: radial-gradient(circle, rgba(232, 2, 1, 0.35) 0%, transparent 72%);
+      bottom: -20%; right: -10%;
+    }
+
+    .pillars-editorial-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      .pillars-editorial-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.75rem;
+      }
+    }
+
+    .pillar-editorial-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%), rgba(11, 31, 58, 0.55);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-top: 2px solid var(--emes-blue);
+      border-radius: 20px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.4s var(--ease-editorial), border-color 0.4s ease;
+    }
+
+    .pillar-editorial-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--emes-blue-glow);
+    }
+
+    .pillar-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    .pillar-icon-wrap {
+      width: 54px; height: 54px;
+      border-radius: 15px;
+      background: rgba(0, 92, 190, 0.22);
+      border: 1px solid rgba(59, 130, 246, 0.45);
+      color: var(--emes-blue-glow);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pillar-badge-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 5px 13px;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .pillar-editorial-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.42rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 0.8rem;
+    }
+
+    .pillar-editorial-card p {
+      font-size: 0.94rem;
+      color: #CBD5E1;
+      line-height: 1.68;
+      margin-bottom: 1.5rem;
+    }
+
+    .pillar-checklist {
+      border-top: 1px dashed rgba(255, 255, 255, 0.16);
+      padding-top: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .pillar-checklist li {
+      font-size: 0.86rem;
+      color: #E2E8F0;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pillar-check-icon {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: rgba(0, 92, 190, 0.35);
+      color: #93C5FD;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    /* ==========================================================================
+       6. CATÁLOGO DE PERMISOS DGT (MARQUEE INFINITO INTERACTIVO)
+       ========================================================================== */
+    .permisos-section {
+      background: var(--emes-dark-deep);
+      position: relative;
+      overflow: hidden;
+      padding: 6rem 0;
+      border-bottom: 1px solid var(--neutral-border);
+    }
+
+    .permisos-section .section-editorial-header {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2.5rem;
+    }
+
+    .permisos-section .section-editorial-desc {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .permisos-marquee-stage {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 2rem 0 0 0;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 14%, black 86%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, black 14%, black 86%, transparent 100%);
+    }
+
+    .permisos-marquee-row {
+      display: flex;
+      width: max-content;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    .permisos-marquee-track {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-shrink: 0;
+      will-change: transform;
+    }
+
+    .permisos-marquee-row:hover .permisos-marquee-track {
+      animation-play-state: paused;
+    }
+
+    .marquee-track-left { animation: marqueeScrollLeft 36s linear infinite; }
+    .marquee-track-right { animation: marqueeScrollRight 40s linear infinite; }
+
+    @keyframes marqueeScrollLeft {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+
+    @keyframes marqueeScrollRight {
+      0% { transform: translate3d(-50%, 0, 0); }
+      100% { transform: translate3d(0, 0, 0); }
+    }
+
+    .permiso-marquee-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 3rem;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .permiso-marquee-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2.35rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: #64748B;
+      transition: color 0.25s ease, text-shadow 0.25s ease;
+    }
+
+    .permiso-marquee-link:hover .permiso-marquee-name {
+      color: #FFFFFF;
+      text-shadow: 0 0 24px rgba(0, 92, 190, 0.75);
+    }
+
+    .permiso-marquee-sep {
+      color: var(--emes-red);
+      font-size: 1.2rem;
+    }
+
+    /* ==========================================================================
+       7. CATÁLOGO DETALLADO DE PERMISOS Y CURSOS PROFESIONALES
+       ========================================================================== */
+    .prof-editorial-section {
+      position: relative;
+      background: var(--emes-dark-surface);
+      overflow: hidden;
+      border-bottom: 1px solid var(--neutral-border);
+    }
+
+    .prof-bg-stage {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .prof-bg-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      filter: brightness(0.32) contrast(1.06);
+    }
+
+    .prof-bg-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(
+        180deg,
+        rgba(6, 9, 19, 0.90) 0%,
+        rgba(6, 9, 19, 0.55) 45%,
+        rgba(6, 9, 19, 0.92) 100%
+      );
+    }
+
+    .prof-editorial-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.35rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 860px) {
+      .prof-editorial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.75rem;
+      }
+    }
+
+    .prof-editorial-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.02) 100%), rgba(11, 31, 58, 0.48);
+      backdrop-filter: blur(16px) saturate(150%);
+      -webkit-backdrop-filter: blur(16px) saturate(150%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-top: 2px solid var(--emes-blue);
+      border-radius: 18px;
+      padding: 1.85rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+      transition: transform 0.35s var(--ease-editorial), border-color 0.35s ease, background 0.35s ease;
+    }
+
+    .prof-editorial-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--emes-blue-glow);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.04) 100%), rgba(11, 31, 58, 0.60);
+    }
+
+    .prof-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .prof-card-title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .prof-icon-wrap {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: rgba(0, 92, 190, 0.24);
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      color: var(--emes-blue-glow);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .prof-editorial-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.32rem;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+
+    .prof-duration-pill {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: rgba(232, 2, 1, 0.22);
+      border: 1px solid rgba(232, 2, 1, 0.45);
+    }
+
+    .prof-editorial-card p {
+      font-size: 0.92rem;
+      color: #CBD5E1;
+      line-height: 1.6;
+      margin-bottom: 1.1rem;
+    }
+
+    .prof-tags-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px 12px;
+      margin-bottom: 1.25rem;
+      padding-top: 0.85rem;
+      border-top: 1px dashed rgba(255, 255, 255, 0.15);
+    }
+
+    @media (min-width: 500px) {
+      .prof-tags-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .prof-tag-item {
+      font-size: 0.82rem;
+      color: #E2E8F0;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .prof-check-icon {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: rgba(0, 92, 190, 0.35);
+      color: #93C5FD;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.68rem;
+      font-weight: 800;
+    }
+
+    .prof-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px) {
+      .prof-card-footer {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .prof-card-footer .btn-editorial,
+      .dgt-results-banner .btn-editorial {
+        width: 100%;
+        white-space: normal;
+        text-align: center;
+        padding: 12px 18px;
+      }
+    }
+
+    .prof-meta-note {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #94A3B8;
+    }
+
+    /* ==========================================================================
+       SCROLL HORIZONTAL MOBILE SIN CORTE SECO EN LOS LADOS
+       ========================================================================== */
+    @media (max-width: 768px) {
+      .pillars-editorial-grid,
+      .prof-editorial-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        gap: 1rem;
+        margin-inline: -1.15rem;
+        padding: 0.5rem 1.25rem 1rem;
+        scroll-padding-inline: 1.25rem;
+      }
+      .pillars-editorial-grid::-webkit-scrollbar,
+      .prof-editorial-grid::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+      .pillars-editorial-grid > .pillar-editorial-card,
+      .prof-editorial-grid > .prof-editorial-card {
+        flex: 0 0 84%;
+        max-width: 84%;
+        scroll-snap-align: start;
+      }
+    }
+
+    /* ==========================================================================
+       8. GALERÍA REAL (INSTALACIONES, FLOTA Y ALUMNOS APROBADOS)
+       ========================================================================== */
+    .gallery-editorial-section {
+      background: var(--emes-dark-deep);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery-header-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .gallery-nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-nav-btn {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+    }
+
+    .gallery-nav-btn:hover {
+      background: var(--emes-blue);
+      border-color: var(--emes-blue-glow);
+      transform: translateY(-2px);
+    }
+
+    .gallery-carousel-track {
+      display: flex;
+      gap: 1.5rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding: 0.5rem 0.25rem 1.25rem;
+      cursor: grab;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-carousel-track {
+        margin-inline: -1.15rem;
+        padding: 0.5rem 1.25rem 1.25rem;
+        scroll-padding-inline: 1.25rem;
+      }
+    }
+
+    .gallery-carousel-track::-webkit-scrollbar { display: none; }
+
+    .gallery-carousel-card {
+      flex: 0 0 calc(33.333% - 1rem);
+      min-width: 300px;
+      scroll-snap-align: start;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--emes-dark-card);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      transition: transform 0.35s var(--ease-editorial), border-color 0.35s ease;
+      user-select: none;
+    }
+
+    @media (max-width: 1024px) {
+      .gallery-carousel-card { flex: 0 0 calc(50% - 0.75rem); min-width: 270px; }
+    }
+    @media (max-width: 640px) {
+      .gallery-carousel-card { flex: 0 0 84%; min-width: 255px; }
+    }
+
+    .gallery-carousel-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--emes-blue-glow);
+    }
+
+    .gallery-card-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 410px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 640px) {
+      .gallery-card-img-wrap { height: 350px; }
+    }
+
+    .gallery-carousel-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 22%;
+      pointer-events: none;
+      transition: transform 0.65s var(--ease-editorial);
+    }
+
+    .gallery-carousel-card:hover img { transform: scale(1.05); }
+
+    .gallery-caption-overlay {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 2.5rem 1.35rem 1.35rem;
+      background: linear-gradient(to top, rgba(6, 9, 19, 0.96) 0%, rgba(6, 9, 19, 0.76) 55%, transparent 100%);
+      color: #FFFFFF;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    .gallery-tag {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: rgba(0, 92, 190, 0.92);
+      padding: 3px 9px;
+      border-radius: 6px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+    .gallery-tag.is-green {
+      background: rgba(4, 188, 5, 0.88);
+      color: #03150B;
+    }
+
+    .gallery-tag.is-red {
+      background: rgba(232, 2, 1, 0.9);
+      color: #FFFFFF;
+    }
+
+    .gallery-title {
+      font-family: var(--font-display);
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.38;
+    }
+
+    .gallery-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 1.5rem;
+    }
+
+    .gallery-pagination-dot {
+      width: 10px; height: 10px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.22);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .gallery-pagination-dot.is-active {
+      width: 30px;
+      background: var(--emes-blue-glow);
+    }
+
+    /* ==========================================================================
+       9. REPUTACIÓN Y VALORACIONES VERIFICADAS EN GOOGLE
+       ========================================================================== */
+    .reviews-editorial-section {
+      position: relative;
+      background: #050811;
+      color: #FFFFFF;
+      overflow: hidden;
+      padding: 6rem 0;
+      border-top: 1px solid var(--neutral-border);
+    }
+
+    .reviews-bg-stage {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .reviews-bg-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.28) contrast(1.08);
+    }
+
+    .reviews-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(180deg, rgba(6, 9, 19, 0.90) 0%, rgba(6, 9, 19, 0.58) 50%, rgba(6, 9, 19, 0.95) 100%);
+    }
+
+    .reviews-content-wrap {
+      position: relative;
+      z-index: 10;
+      max-width: 940px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .reviews-editorial-section .section-editorial-header {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2.25rem;
+    }
+
+    .reputation-summary-card {
+      width: 100%;
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 2.25rem 2.5rem;
+      background: rgba(11, 31, 58, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-top: 3px solid var(--emes-blue);
+      border-radius: 22px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+      text-align: left;
+    }
+
+    @media (max-width: 640px) {
+      .reputation-summary-card { padding: 1.5rem 1.25rem; }
+    }
+
+    .rep-top-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .rep-score-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .rep-score-num {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1;
+    }
+
+    .rep-stars {
+      color: #FBBF24;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      display: block;
+    }
+
+    .rep-sub {
+      font-size: 0.86rem;
+      color: #CBD5E1;
+    }
+
+    .rep-highlights-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    @media (min-width: 640px) {
+      .rep-highlights-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .rep-highlight-item {
+      background: rgba(6, 9, 19, 0.58);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: 14px;
+      padding: 1rem 1.15rem;
+    }
+
+    .rep-highlight-title {
+      font-weight: 800;
+      font-size: 0.96rem;
+      color: #FFFFFF;
+      margin-bottom: 0.35rem;
+    }
+
+    .rep-highlight-desc {
+      font-size: 0.86rem;
+      color: #94A3B8;
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       10. POPUP MODAL DE TRIAGEM INTELIGENTE (1 PREGUNTA POR VEZ)
+       ========================================================================== */
+    .triage-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 1200;
+      background: rgba(4, 7, 15, 0.68);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.35s var(--ease-editorial), visibility 0.35s ease;
+    }
+
+    .triage-modal-backdrop.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .triage-shell {
+      width: 100%;
+      max-width: 640px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.02) 100%), rgba(11, 31, 58, 0.90);
+      backdrop-filter: blur(28px) saturate(165%);
+      -webkit-backdrop-filter: blur(28px) saturate(165%);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-top: 3px solid var(--emes-red);
+      border-radius: 24px;
+      padding: 1.65rem 1.85rem;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.65);
+      transform: translateY(22px) scale(0.97);
+      transition: transform 0.35s var(--ease-editorial);
+      overflow: visible;
+    }
+
+    .triage-modal-backdrop.is-open .triage-shell {
+      transform: translateY(0) scale(1);
+    }
+
+    @media (max-width: 640px) {
+      .triage-shell { padding: 1.25rem 1.1rem; border-radius: 20px; }
+    }
+
+    .triage-modal-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .triage-progress-label {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--emes-blue-glow);
+    }
+
+    .triage-close-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #FFFFFF;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .triage-close-btn:hover {
+      background: var(--emes-red);
+      border-color: var(--emes-red);
+    }
+
+    .triage-progress-track {
+      width: 100%;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 1.15rem;
+    }
+
+    .triage-progress-fill {
+      height: 100%;
+      width: 25%;
+      background: linear-gradient(90deg, var(--emes-blue), var(--emes-red));
+      border-radius: 999px;
+      transition: width 0.35s var(--ease-editorial);
+    }
+
+    .triage-step {
+      display: none;
+      animation: triageStepFade 0.32s var(--ease-editorial);
+    }
+
+    .triage-step.is-active {
+      display: block;
+    }
+
+    @keyframes triageStepFade {
+      from { opacity: 0; transform: translateX(14px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .triage-step-label {
+      font-family: var(--font-display);
+      font-size: 1.32rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.2;
+      margin-bottom: 0.3rem;
+    }
+
+    .triage-step-sub {
+      font-size: 0.88rem;
+      color: #CBD5E1;
+      margin-bottom: 1rem;
+    }
+
+    .triage-chips-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 9px;
+    }
+
+    @media (min-width: 520px) {
+      #triageCursoGroup {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      #triageCursoGroup .triage-chip:last-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    .triage-chip {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.5px solid rgba(255, 255, 255, 0.18);
+      color: #F1F5F9;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      transition: all 0.2s var(--ease-editorial);
+      cursor: pointer;
+    }
+
+    .triage-chip::after {
+      content: "→";
+      opacity: 0.45;
+      font-weight: 700;
+    }
+
+    .triage-chip:hover {
+      border-color: var(--emes-blue-glow);
+      background: rgba(0, 92, 190, 0.24);
+      color: #FFFFFF;
+      transform: translateX(3px);
+    }
+
+    .triage-chip.is-selected {
+      background: var(--emes-blue);
+      border-color: var(--emes-blue-glow);
+      color: #FFFFFF;
+      box-shadow: 0 6px 18px rgba(0, 92, 190, 0.42);
+    }
+
+    .triage-chip.is-selected::after {
+      content: "✓";
+      opacity: 1;
+    }
+
+    .triage-name-input {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: rgba(6, 9, 19, 0.85);
+      border: 1.5px solid rgba(255, 255, 255, 0.18);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.98rem;
+      outline: none;
+      margin-bottom: 1rem;
+    }
+
+    .triage-name-input:focus { border-color: var(--emes-blue-glow); }
+
+    .triage-summary-box {
+      background: rgba(6, 9, 19, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 0.95rem 1.1rem;
+      font-size: 0.86rem;
+      color: #CBD5E1;
+      line-height: 1.65;
+      margin-bottom: 1rem;
+    }
+
+    .triage-summary-box strong { color: #FFFFFF; }
+
+    .triage-alert-msg {
+      display: none;
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: #FCA5A5;
+      background: rgba(232, 2, 1, 0.18);
+      border: 1px solid rgba(232, 2, 1, 0.4);
+      border-radius: 10px;
+      padding: 8px 12px;
+      margin-bottom: 0.85rem;
+    }
+
+    .triage-alert-msg.is-visible { display: block; }
+
+    .triage-modal-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 1.35rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .triage-back-btn {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #94A3B8;
+      padding: 8px 12px;
+      border-radius: 10px;
+      transition: color 0.2s ease, background 0.2s ease;
+    }
+
+    .triage-back-btn:hover {
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .triage-back-btn[hidden] {
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    /* ==========================================================================
+       11. FAQ & PORTAL DE NOTAS DGT
+       ========================================================================== */
+    .faq-editorial-section {
+      background: var(--emes-dark-deep);
+      padding: 5.5rem 0;
+      border-bottom: 1px solid var(--neutral-border);
+    }
+
+    .faq-editorial-container { max-width: 860px; margin: 0 auto; }
+
+    .faq-editorial-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 1.4rem 0;
+    }
+
+    .faq-editorial-item:first-of-type {
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .faq-editorial-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: 100%;
+      text-align: left;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+
+    .faq-editorial-question:hover { color: var(--emes-blue-glow); }
+
+    .faq-editorial-indicator {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--emes-blue-glow);
+      flex-shrink: 0;
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .faq-editorial-item.active .faq-editorial-indicator {
+      transform: rotate(45deg);
+      background: var(--emes-blue);
+      color: #FFFFFF;
+      border-color: var(--emes-blue-glow);
+    }
+
+    .faq-editorial-answer {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      font-size: 0.94rem;
+      color: #CBD5E1;
+      line-height: 1.65;
+      transition: max-height 0.45s var(--ease-editorial), opacity 0.35s ease, margin 0.35s ease;
+    }
+
+    .faq-editorial-item.active .faq-editorial-answer {
+      max-height: 280px;
+      opacity: 1;
+      margin-top: 0.85rem;
+    }
+
+    .dgt-results-banner {
+      margin-top: 3rem;
+      background: linear-gradient(135deg, rgba(0, 92, 190, 0.28) 0%, #0F172A 100%);
+      border: 1px solid rgba(59, 130, 246, 0.42);
+      border-radius: 18px;
+      padding: 1.75rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+    /* ==========================================================================
+       12. LOCALIZACIÓN, HORARIOS Y MAPA (EL GRAO DE CASTELLÓN)
+       ========================================================================== */
+    .contact-editorial-section {
+      background: var(--emes-dark-surface);
+      padding: 5rem 0;
+    }
+
+    .contact-architectural-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+      background: var(--emes-dark-card);
+    }
+
+    @media (min-width: 992px) {
+      .contact-architectural-grid {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      }
+    }
+
+    .contact-text-column {
+      padding: 2.25rem;
+      background: var(--emes-dark-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.35rem;
+    }
+
+    .contact-cards-subgrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+    }
+
+    @media (min-width: 600px) {
+      .contact-cards-subgrid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .center-mini-card {
+      background: var(--emes-dark-deep);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+    }
+
+    .center-mini-card.is-main {
+      border-color: rgba(0, 92, 190, 0.55);
+      grid-column: 1 / -1;
+    }
+
+    .center-mini-tag {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--emes-blue-glow);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .center-mini-name {
+      font-family: var(--font-display);
+      font-size: 1.12rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .center-mini-addr {
+      font-size: 0.88rem;
+      color: #CBD5E1;
+      margin-bottom: 6px;
+    }
+
+    .center-mini-tel {
+      font-family: var(--font-mono);
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .center-mini-tel:hover { color: var(--emes-blue-glow); }
+
+    .contact-hours-column {
+      padding: 2.25rem;
+      background: var(--emes-dark-deep);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    @media (min-width: 992px) {
+      .contact-hours-column {
+        border-top: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.10);
+      }
+    }
+
+    .schedule-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .schedule-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      gap: 12px;
+    }
+
+    .schedule-day { font-size: 0.9rem; font-weight: 800; color: #FFFFFF; }
+    .schedule-time { font-family: var(--font-mono); font-size: 0.82rem; font-weight: 700; color: var(--emes-blue-glow); text-align: right; }
+
+    @media (max-width: 640px) {
+      .contact-text-column, .contact-hours-column { padding: 1.5rem 1.25rem; }
+      .schedule-item { flex-direction: column; align-items: flex-start; gap: 4px; }
+      .schedule-time { text-align: left; }
+    }
+
+    .map-embed-wrap {
+      margin-top: 1.75rem;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      height: 320px;
+      background: var(--emes-dark-deep);
+    }
+
+    .map-embed-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    /* ==========================================================================
+       13. FOOTER SOBRIO + BOTÓN FLOTANTE DE TRIAGEM
+       ========================================================================== */
+    .site-editorial-footer {
+      background: #04060D;
+      color: #FFFFFF;
+      padding: 5rem 0 3rem;
+      border-top: 3px solid var(--emes-blue);
+    }
+
+    .footer-columns-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.75rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    @media (min-width: 768px) { .footer-columns-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .footer-columns-grid { grid-template-columns: 1.4fr 0.9fr 0.9fr 1fr; } }
+
+    .footer-col-title {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--emes-blue-glow);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .footer-links-list a, .footer-links-list button {
+      font-size: 0.92rem;
+      color: #94A3B8;
+      text-align: left;
+    }
+
+    .footer-links-list a:hover, .footer-links-list button:hover {
+      color: #FFFFFF;
+      padding-left: 4px;
+    }
+
+    .footer-bottom-row {
+      padding-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      font-size: 0.85rem;
+      color: #64748B;
+    }
+
+    .floating-brand-wa {
+      position: fixed;
+      bottom: 26px;
+      right: 26px;
+      z-index: 998;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--emes-wa);
+      color: #03150B !important;
+      padding: 12px 22px;
+      border-radius: 9999px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55), 0 0 22px rgba(37, 211, 102, 0.28);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: floatingWaEnter 1.2s var(--ease-editorial) 1.85s forwards;
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    @keyframes floatingWaEnter {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .floating-brand-wa:hover {
+      background: #34E376;
+      transform: translateY(-2px) scale(1.03);
+    }
+
+    .wa-icon-svg { width: 22px; height: 22px; fill: #03150B; flex-shrink: 0; }
+    .wa-label-box { display: flex; flex-direction: column; text-align: left; }
+    .wa-label-title { font-size: 0.84rem; font-weight: 900; color: #03150B; line-height: 1.15; }
+    .wa-label-sub { font-size: 0.72rem; font-weight: 700; color: #064E3B; line-height: 1.15; }
+
+    @media (max-width: 768px) {
+      .floating-brand-wa {
+        bottom: 18px; right: 16px;
+        width: 54px; height: 54px;
+        padding: 0; border-radius: 50%;
+        justify-content: center;
+      }
+      .floating-brand-wa .wa-label-box { display: none; }
+      .wa-icon-svg { width: 26px; height: 26px; }
+    }
+
+    /* ==========================================================================
+       ANIMACIONES DE ENTRADA ESCALONADAS Y DEVAGAR
+       ========================================================================== */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 1.35s var(--ease-editorial), transform 1.35s var(--ease-editorial);
+    }
+
+    .reveal-on-scroll.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-1 { transition-delay: 0.20s; }
+    .delay-2 { transition-delay: 0.44s; }
+    .delay-3 { transition-delay: 0.68s; }
+    .delay-4 { transition-delay: 0.92s; }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP NAV MINIMALISTA
+       ======================================================================== -->
+  <nav class="editorial-nav" id="mainNav" aria-label="Navegación principal">
+    <div class="editorial-nav-inner">
+      <a href="#inicio" class="editorial-brand-link" aria-label="Autoescola EMES - Inicio">
+        <img src="assets/logofavicon.png" alt="Autoescola EMES - El Grao de Castellón" class="editorial-brand-logo" />
+      </a>
+
+      <div class="nav-actions-group">
+        <button type="button" class="btn-editorial btn-primary-cta nav-cta-desktop js-open-triage" data-curso="Permiso B (Coche)">
+          Consulta rápida (15s)
+        </button>
+        <button type="button" class="editorial-menu-btn" id="openMenuBtn" aria-label="Abrir menú de navegación">
+          <span>Menú</span>
+          <span class="editorial-burger-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Minimalist Overlay Menu -->
+  <div class="editorial-overlay-menu" id="overlayMenu" aria-hidden="true">
+    <div class="overlay-top-row">
+      <a href="#inicio" class="editorial-brand-link overlay-nav-link" aria-label="Autoescola EMES - Inicio">
+        <img src="assets/logofavicon.png" alt="Autoescola EMES" class="editorial-brand-logo" />
+      </a>
+      <button type="button" class="overlay-close-btn" id="closeMenuBtn" aria-label="Cerrar menú">
+        <span>Cerrar ✕</span>
+      </button>
+    </div>
+
+    <div class="overlay-nav-list">
+      <a href="#inicio" class="overlay-nav-link"><span class="nav-index">01</span><span>Inicio</span></a>
+      <a href="#metodo" class="overlay-nav-link"><span class="nav-index">02</span><span>Nuestro Método y Ventajas</span></a>
+      <a href="#permisos" class="overlay-nav-link"><span class="nav-index">03</span><span>Permisos y Cursos DGT</span></a>
+      <a href="#instalaciones" class="overlay-nav-link"><span class="nav-index">04</span><span>Instalaciones, Flota y Aprobados</span></a>
+      <a href="#opiniones" class="overlay-nav-link"><span class="nav-index">05</span><span>Valoraciones en Google</span></a>
+      <a href="#faq" class="overlay-nav-link"><span class="nav-index">06</span><span>Preguntas Frecuentes</span></a>
+      <a href="#contacto" class="overlay-nav-link"><span class="nav-index">07</span><span>Ubicación y Horarios</span></a>
+    </div>
+
+    <div class="overlay-bottom-bar">
+      <div>Carrer de Joan d'Àustria, 37 (bajo) · 12100 El Grao de Castellón</div>
+      <div style="display:flex; gap:1.5rem; flex-wrap:wrap;">
+        <a href="tel:+34642304183" style="color:#FFFFFF; font-weight:700;">+34 642 30 41 83</a>
+        <a href="tel:+34964820561" style="color:#FFFFFF; font-weight:700;">964 820 561</a>
+        <button type="button" class="js-open-triage" data-curso="Permiso B (Coche)" style="color:var(--emes-wa); font-weight:800;">Consulta rápida WhatsApp →</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         HERO LIMPIO CON FLOTA REAL DE AUTOESCOLA EMES
+         ====================================================================== -->
+    <section class="hero-editorial" id="inicio">
+      <div class="hero-bg-stage" aria-hidden="true">
+        <img src="assets/homedesktop.png" alt="Flota de coches Citroën de Autoescola EMES en el Grau de Castelló" class="hero-img-el hero-img-desktop" />
+        <img src="assets/homemobile.png" alt="Flota de vehículos de Autoescola EMES" class="hero-img-el hero-img-mobile" />
+      </div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <div class="hero-editorial-inner">
+        <div class="hero-lead-editorial">
+          <div class="hero-badges-row">
+            <span class="hero-badge-pill">Centro Homologado DGT</span>
+            <span class="hero-badge-pill">El Grao de Castellón</span>
+            <span class="hero-badge-pill">Matrícula Abierta</span>
+          </div>
+          <h1 class="hero-editorial-title">
+            Tu carnet de conducir en el Grau, <em>con confianza.</em>
+          </h1>
+          <p class="hero-editorial-subtitle">
+            Trato cercano y familiar, aula equipada para test DGT y flota moderna de prácticas para que apruebes a tu ritmo y sin estrés.
+          </p>
+          <div class="hero-cta-group">
+            <button type="button" class="btn-editorial btn-primary-cta js-open-triage" data-curso="Permiso B (Coche)">
+              Consultar tarifas y plazas (15s) →
+            </button>
+            <a href="tel:+34642304183" class="btn-editorial btn-light-outline">
+              Llamar: 642 30 41 83
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         MÉTRICAS EDITORIALES
+         ====================================================================== -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-item reveal-on-scroll delay-1">
+            <div class="metric-number is-accent">4,6 ★</div>
+            <div>
+              <div class="metric-label">Valoración en Google</div>
+              <div class="metric-sub">Más de 90 reseñas destacando la paciencia y cercanía del equipo.</div>
+            </div>
+          </div>
+
+          <div class="metric-item reveal-on-scroll delay-2">
+            <div class="metric-number">Grau de Castelló</div>
+            <div>
+              <div class="metric-label">Tu autoescuela de barrio</div>
+              <div class="metric-sub">Carrer de Joan d'Àustria, 37. Cómodo acceso a pie o en transporte público.</div>
+            </div>
+          </div>
+
+          <div class="metric-item reveal-on-scroll delay-3">
+            <div class="metric-number is-accent">Teórico + Test</div>
+            <div>
+              <div class="metric-label">Aula Digital Equipada</div>
+              <div class="metric-sub">Puestos informáticos propios y plataforma de test DGT actualizados.</div>
+            </div>
+          </div>
+
+          <div class="metric-item reveal-on-scroll delay-4">
+            <div class="metric-number">Todos los Carnets</div>
+            <div>
+              <div class="metric-label">Particulares y Profesionales</div>
+              <div class="metric-sub">Permiso B, motos AM/A1/A2/A, camión C, tráiler C+E, autobús D y CAP.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         LOS 3 PILARES (MÉTODO EMES)
+         ====================================================================== -->
+    <section class="section-editorial-padding pillars-section" id="metodo">
+      <div class="pillars-animated-bg" aria-hidden="true">
+        <div class="pillars-glow-orb orb-1"></div>
+        <div class="pillars-glow-orb orb-2"></div>
+        <div class="pillars-grid-mesh"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-editorial-header reveal-on-scroll">
+          <span class="section-editorial-index">MÉTODO AUTOESCOLA EMES</span>
+          <h2 class="section-editorial-title">
+            Tres pilares para conseguir tu permiso <em>sin estrés</em>
+          </h2>
+          <p class="section-editorial-desc">
+            Acompañamos a cada alumno desde el primer test teórico hasta el día en que recoge su placa L, adaptando el ritmo a tus horarios.
+          </p>
+        </div>
+
+        <div class="pillars-editorial-grid">
+          <div class="pillar-editorial-card reveal-on-scroll delay-1">
+            <div>
+              <div class="pillar-card-top">
+                <div class="pillar-icon-wrap" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <span class="pillar-badge-pill">PILAR 01</span>
+              </div>
+              <h3>Aula de Test y Teórica Digital</h3>
+              <p>Prepara el examen teórico en nuestra sala de ordenadores con test oficiales de la DGT actualizados y apoyo constante para resolver dudas.</p>
+            </div>
+            <ul class="pillar-checklist">
+              <li><span class="pillar-check-icon">✓</span> Puestos informáticos en el centro</li>
+              <li><span class="pillar-check-icon">✓</span> Test de examen DGT actualizados</li>
+              <li><span class="pillar-check-icon">✓</span> Seguimiento personalizado</li>
+            </ul>
+          </div>
+
+          <div class="pillar-editorial-card reveal-on-scroll delay-2">
+            <div>
+              <div class="pillar-card-top">
+                <div class="pillar-icon-wrap" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14v-5l-2-5H7l-2 5v5z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg>
+                </div>
+                <span class="pillar-badge-pill">PILAR 02</span>
+              </div>
+              <h3>Flota Moderna y Clases Prácticas</h3>
+              <p>Aprende a conducir con vehículos cómodos, seguros y bien cuidados (Citroën C3 y C3 Aircross), ganando soltura desde la primera práctica.</p>
+            </div>
+            <ul class="pillar-checklist">
+              <li><span class="pillar-check-icon">✓</span> Profesores pacientes y cercanos</li>
+              <li><span class="pillar-check-icon">✓</span> Flexibilidad para programar prácticas</li>
+              <li><span class="pillar-check-icon">✓</span> Clases de reciclaje y amaxofobia</li>
+            </ul>
+          </div>
+
+          <div class="pillar-editorial-card reveal-on-scroll delay-3">
+            <div>
+              <div class="pillar-card-top">
+                <div class="pillar-icon-wrap" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <span class="pillar-badge-pill">PILAR 03</span>
+              </div>
+              <h3>Gestión Ágil y Trato Familiar</h3>
+              <p>Te ayudamos con toda la documentación de la DGT, traslado de expediente si ya tienes el teórico aprobado y atención rápida por WhatsApp.</p>
+            </div>
+            <ul class="pillar-checklist">
+              <li><span class="pillar-check-icon">✓</span> Gestión íntegra ante la DGT</li>
+              <li><span class="pillar-check-icon">✓</span> Solo prácticas si ya tienes teórico</li>
+              <li><span class="pillar-check-icon">✓</span> Atención directa en secretaría</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CATÁLOGO DE PERMISOS DGT (MARQUEE INFINITO INTERACTIVO)
+         ====================================================================== -->
+    <section class="section-editorial-padding permisos-section" id="permisos">
+      <div class="container">
+        <div class="section-editorial-header reveal-on-scroll">
+          <span class="section-editorial-index">CATÁLOGO OFICIAL DGT</span>
+          <h2 class="section-editorial-title">
+            Permisos de Conducir y <em>Formación Profesional</em>
+          </h2>
+          <p class="section-editorial-desc">
+            Pulsa sobre cualquier permiso o curso para abrir nuestra consulta rápida por WhatsApp con tu opción ya seleccionada.
+          </p>
+        </div>
+      </div>
+
+      <div class="permisos-marquee-stage reveal-on-scroll">
+        <!-- Fila 1 -->
+        <div class="permisos-marquee-row">
+          <div class="permisos-marquee-track marquee-track-left">
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Permiso B (Coche)"><span class="permiso-marquee-name">Permiso B · Coche</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Moto AM / A1 / A2 / A"><span class="permiso-marquee-name">Motos AM · A1 · A2 · A</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Permiso B (Coche)"><span class="permiso-marquee-name">Remolques B96 y B+E</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Clases de reciclaje / Amaxofobia"><span class="permiso-marquee-name">Clases de Reciclaje</span><span class="permiso-marquee-sep">•</span></button>
+            <!-- Duplicado -->
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Permiso B (Coche)" aria-hidden="true" tabindex="-1"><span class="permiso-marquee-name">Permiso B · Coche</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Moto AM / A1 / A2 / A" aria-hidden="true" tabindex="-1"><span class="permiso-marquee-name">Motos AM · A1 · A2 · A</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Permiso B (Coche)" aria-hidden="true" tabindex="-1"><span class="permiso-marquee-name">Remolques B96 y B+E</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Clases de reciclaje / Amaxofobia" aria-hidden="true" tabindex="-1"><span class="permiso-marquee-name">Clases de Reciclaje</span><span class="permiso-marquee-sep">•</span></button>
+          </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="permisos-marquee-row">
+          <div class="permisos-marquee-track marquee-track-right">
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Camión / Autobús (C / C+E / D)"><span class="permiso-marquee-name">Camión C · Tráiler C+E</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Camión / Autobús (C / C+E / D)"><span class="permiso-marquee-name">Autobús D y D+E</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="CAP Inicial / Continuo"><span class="permiso-marquee-name">CAP Inicial y Continuo</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="CAP Inicial / Continuo"><span class="permiso-marquee-name">Tacógrafo y Conducción Eficiente</span><span class="permiso-marquee-sep">•</span></button>
+            <!-- Duplicado -->
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Camión / Autobús (C / C+E / D)" aria-hidden="true" tabindex="-1"><span class="permiso-marquee-name">Camión C · Tráiler C+E</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="Camión / Autobús (C / C+E / D)" aria-hidden="true" tabindex="-1"><span class="permiso-marquee-name">Autobús D y D+E</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="CAP Inicial / Continuo" aria-hidden="true" tabindex="-1"><span class="permiso-marquee-name">CAP Inicial y Continuo</span><span class="permiso-marquee-sep">•</span></button>
+            <button type="button" class="permiso-marquee-link js-open-triage" data-curso="CAP Inicial / Continuo" aria-hidden="true" tabindex="-1"><span class="permiso-marquee-name">Tacógrafo y Conducción Eficiente</span><span class="permiso-marquee-sep">•</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CARDS DETALLADOS DE PERMISOS Y CURSOS (PRÉ-SELECCIÓN EN POPUP)
+         ====================================================================== -->
+    <section class="section-editorial-padding prof-editorial-section" id="profesional">
+      <div class="prof-bg-stage" aria-hidden="true">
+        <img src="assets/unnamed (1).jpg" alt="Vehículos de prácticas de Autoescola EMES" loading="lazy" />
+      </div>
+      <div class="prof-bg-vignette" aria-hidden="true"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-editorial-header reveal-on-scroll">
+          <span class="section-editorial-index">OFERTA FORMATIVA</span>
+          <h2 class="section-editorial-title">
+            Elige tu permiso y <em>consulta disponibilidad</em>
+          </h2>
+          <p class="section-editorial-desc">
+            Selecciona el carnet o curso que necesitas y responde 3 pasos rápidos para que secretaría te envíe tarifas y horarios por WhatsApp.
+          </p>
+        </div>
+
+        <div class="prof-editorial-grid">
+          <!-- 1. Permiso B Coche -->
+          <div class="prof-editorial-card reveal-on-scroll delay-1">
+            <div>
+              <div class="prof-card-top">
+                <div class="prof-card-title-group">
+                  <div class="prof-icon-wrap" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14v-5l-2-5H7l-2 5v5z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg>
+                  </div>
+                  <h3>Permiso B (Coche)</h3>
+                </div>
+                <span class="prof-duration-pill">MATRÍCULA ABIERTA</span>
+              </div>
+              <p>Formación completa para conducir turismos, tanto si empiezas desde cero con el teórico como si ya lo tienes aprobado y buscas empezar tus prácticas.</p>
+              <div class="prof-tags-grid">
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Sala de test DGT equipada</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Flota Citroën C3 y Aircross</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Horarios de mañana y tarde</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Remolques B96 y B+E</div>
+              </div>
+            </div>
+            <div class="prof-card-footer">
+              <span class="prof-meta-note">Consultar tarifas en secretaría</span>
+              <button type="button" class="btn-editorial btn-primary-cta js-open-triage" data-curso="Permiso B (Coche)">
+                Consultar Permiso B
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. Motos AM, A1, A2 y A -->
+          <div class="prof-editorial-card reveal-on-scroll delay-2">
+            <div>
+              <div class="prof-card-top">
+                <div class="prof-card-title-group">
+                  <div class="prof-icon-wrap" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h2l3 7.5"/><path d="M9 17.5l3-7.5h4"/></svg>
+                  </div>
+                  <h3>Motos AM, A1, A2 y A</h3>
+                </div>
+                <span class="prof-duration-pill">CICLOMOTOR Y MOTOCICLETA</span>
+              </div>
+              <p>Preparación para todas las categorías de dos ruedas: desde ciclomotor (AM) y 125cc (A1) hasta motos de media cilindrada (A2) y el acceso al permiso A.</p>
+              <div class="prof-tags-grid">
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Permiso AM (Ciclomotor)</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Permiso A1 (hasta 125cc)</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Permiso A2 (hasta 35 kW)</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Curso oficial Permiso A</div>
+              </div>
+            </div>
+            <div class="prof-card-footer">
+              <span class="prof-meta-note">Consultar disponibilidad</span>
+              <button type="button" class="btn-editorial btn-primary-cta js-open-triage" data-curso="Moto AM / A1 / A2 / A">
+                Consultar Motos
+              </button>
+            </div>
+          </div>
+
+          <!-- 3. Permisos Profesionales y CAP -->
+          <div class="prof-editorial-card reveal-on-scroll delay-3">
+            <div>
+              <div class="prof-card-top">
+                <div class="prof-card-title-group">
+                  <div class="prof-icon-wrap" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  </div>
+                  <h3>Camión, Autobús y CAP</h3>
+                </div>
+                <span class="prof-duration-pill">TRANSPORTE PROFESIONAL</span>
+              </div>
+              <p>Formación orientada a conductores profesionales y empresas de transporte: permisos C1, C, C+E, D1, D y cursos CAP Inicial y Continuo.</p>
+              <div class="prof-tags-grid">
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Camión C1 / C y Tráiler C+E</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Autobús D1 / D y D+E</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> CAP Inicial y Renovación</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Tacógrafo y Conducción Eficiente</div>
+              </div>
+            </div>
+            <div class="prof-card-footer">
+              <span class="prof-meta-note">Consultar próximas convocatorias</span>
+              <button type="button" class="btn-editorial btn-primary-cta js-open-triage" data-curso="CAP Inicial / Continuo">
+                Consultar CAP y Pesados
+              </button>
+            </div>
+          </div>
+
+          <!-- 4. Clases de Reciclaje y Amaxofobia -->
+          <div class="prof-editorial-card reveal-on-scroll delay-4">
+            <div>
+              <div class="prof-card-top">
+                <div class="prof-card-title-group">
+                  <div class="prof-icon-wrap" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <h3>Reciclaje y Amaxofobia</h3>
+                </div>
+                <span class="prof-duration-pill">VUELVE A CONDUCIR</span>
+              </div>
+              <p>Si ya tienes el permiso B pero llevas tiempo sin conducir o sientes miedo al volante, te ayudamos a recuperar seguridad paso a paso en tráfico real.</p>
+              <div class="prof-tags-grid">
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Clases prácticas a medida</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Superación de amaxofobia</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Aparcamiento y rotondas</div>
+                <div class="prof-tag-item"><span class="prof-check-icon">✓</span> Trato tranquilo y sin prisas</div>
+              </div>
+            </div>
+            <div class="prof-card-footer">
+              <span class="prof-meta-note">Sin examen DGT requerido</span>
+              <button type="button" class="btn-editorial btn-primary-cta js-open-triage" data-curso="Clases de reciclaje / Amaxofobia">
+                Consultar Reciclaje
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         GALERÍA REAL DE INSTALACIONES, FLOTA Y ALUMNOS APROBADOS
+         ====================================================================== -->
+    <section class="section-editorial-padding gallery-editorial-section" id="instalaciones">
+      <div class="container">
+        <div class="gallery-header-row reveal-on-scroll">
+          <div class="section-editorial-header" style="margin-bottom: 0;">
+            <span class="section-editorial-index">INSTALACIONES Y APROBADOS</span>
+            <h2 class="section-editorial-title">
+              Nuestra Flota, Aula y <em>Alumnos con su "L"</em>
+            </h2>
+            <p class="section-editorial-desc">
+              Imágenes reales de nuestros coches de prácticas, la sala de ordenadores para test DGT y alumnos celebrando su aprobado en Autoescola EMES.
+            </p>
+          </div>
+          <div class="gallery-nav-controls" aria-label="Controles del carrusel">
+            <button type="button" class="gallery-nav-btn" id="galleryPrevBtn" aria-label="Foto anterior">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button type="button" class="gallery-nav-btn" id="galleryNextBtn" aria-label="Siguiente foto">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery-carousel-container" id="galleryCarouselContainer">
+          <div class="gallery-carousel-track" id="galleryCarouselTrack">
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/unnamed (1).jpg" alt="Coches Citroën de Autoescola EMES listos para clases prácticas" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag">FLOTA REAL</span>
+                  <div class="gallery-title">Coches de prácticas Citroën C3 y C3 Aircross en el Grau</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/Captura de tela 2026-11-27 133249.png" alt="Aula de informática de Autoescola EMES Grau con ordenadores para test DGT" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag">AULA DE TEST</span>
+                  <div class="gallery-title">Sala equipada con ordenadores para preparar tu examen teórico</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/Captura de tela 2026-11-27 133306.png" alt="Placa identificativa de prácticas Autoescola EMES Grau" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag is-red">EMES GRAU</span>
+                  <div class="gallery-title">Identidad propia en el distrito marítimo de Castellón</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/Captura de tela 2026-11-27 133337.png" alt="Alumnos realizando test DGT en el aula de Autoescola EMES" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag">TEÓRICO DGT</span>
+                  <div class="gallery-title">Ambiente cercano y estudio guiado en nuestra sede</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/Captura de tela 2026-11-27 133405.png" alt="Citroën C3 azul de prácticas de Autoescola EMES" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag">PERMISO B</span>
+                  <div class="gallery-title">Vehículos ágiles y cómodos para tus prácticas urbanas</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/Captura de tela 2026-11-27 130959.png" alt="Alumno aprobado con su placa L de AE EMES" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag is-green">¡APROBADO!</span>
+                  <div class="gallery-title">Celebrando su placa L en Autoescola EMES</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/Captura de tela 2026-11-27 131018.png" alt="Alumna aprobada sosteniendo su placa L en Autoescola EMES" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag is-green">¡APROBADA!</span>
+                  <div class="gallery-title">¡Objetivo cumplido! Nueva conductora con su L</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/Captura de tela 2026-11-27 131034.png" alt="Alumna sonriente con su placa L junto a las letras EMES" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag is-green">¡APROBADA!</span>
+                  <div class="gallery-title">Recogiendo la placa L tras aprobar el práctico</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/Captura de tela 2026-11-27 133232.png" alt="Alumna aprobada con placa L en Autoescola EMES" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag is-green">¡APROBADA!</span>
+                  <div class="gallery-title">Aprobada en Autoescola EMES Grau</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery-carousel-card">
+              <div class="gallery-card-img-wrap">
+                <img src="assets/Captura de tela 2026-11-27 133350.png" alt="Alumna feliz sosteniendo su placa L en Autoescola EMES" loading="lazy" />
+                <div class="gallery-caption-overlay">
+                  <span class="gallery-tag is-green">¡APROBADA!</span>
+                  <div class="gallery-title">Otra alumna más lista para disfrutar de la carretera</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="gallery-pagination" id="galleryPagination" aria-label="Indicadores de fotos"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         REPUTACIÓN EN GOOGLE REVIEWS
+         ====================================================================== -->
+    <section class="reviews-editorial-section" id="opiniones">
+      <div class="reviews-bg-stage" aria-hidden="true">
+        <img src="assets/homedesktop.png" alt="" loading="lazy" />
+      </div>
+      <div class="reviews-vignette" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="reviews-content-wrap">
+          <div class="section-editorial-header reveal-on-scroll">
+            <span class="section-editorial-index">REPUTACIÓN EN EL GRAU DE CASTELLÓ</span>
+            <h2 class="section-editorial-title">
+              Lo que más valoran nuestros <em>alumnos en Google</em>
+            </h2>
+          </div>
+
+          <div class="reputation-summary-card reveal-on-scroll delay-1">
+            <div class="rep-top-bar">
+              <div class="rep-score-group">
+                <div class="rep-score-num">4,6</div>
+                <div>
+                  <span class="rep-stars" aria-label="4.6 de 5 estrellas">★★★★★</span>
+                  <span class="rep-sub">Media en Google y directorios (+90 reseñas)</span>
+                </div>
+              </div>
+              <a href="https://www.google.com/maps/place/Autoescola+EMES/@39.9737385,-0.0658107,13z/data=!4m10!1m2!2m1!1sautoescuela!3m6!1s0x129fffe5ee002fd1:0x7408b613ab7a75f4!8m2!3d39.9737385!4d0.010407!15sCgthdXRvZXNjdWVsYVoNIgthdXRvZXNjdWVsYZIBDmRyaXZpbmdfc2Nob29smgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDIxNFRXVnRhSGRTYTJSUFdXdDBTbVZ1WkZka1ZFNUVWbFJHV2xsWVl4QULgAQD6AQQIABA7!16s%2Fg%2F11ffw97p9m?entry=ttu&g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-light-outline" style="padding:10px 18px; font-size:0.84rem;">
+                Ver reseñas en Google Maps ↗
+              </a>
+            </div>
+
+            <div class="rep-highlights-grid">
+              <div class="rep-highlight-item">
+                <div class="rep-highlight-title">Paciencia y confianza al volante</div>
+                <div class="rep-highlight-desc">Los alumnos destacan el trato cercano de los profesores para calmar los nervios y adaptar el ritmo de cada clase práctica.</div>
+              </div>
+              <div class="rep-highlight-item">
+                <div class="rep-highlight-title">Preparación teórica eficaz</div>
+                <div class="rep-highlight-desc">Valoración muy positiva del aula equipada con ordenadores, test online actualizados y apoyo constante antes del examen.</div>
+              </div>
+              <div class="rep-highlight-item">
+                <div class="rep-highlight-title">Flexibilidad para programar clases</div>
+                <div class="rep-highlight-desc">Facilidad para cuadrar y reajustar las prácticas según tu disponibilidad de estudios o trabajo.</div>
+              </div>
+              <div class="rep-highlight-item">
+                <div class="rep-highlight-title">Atención en secretaría</div>
+                <div class="rep-highlight-desc">Amabilidad y agilidad en la gestión de matrículas, trámites y consultas ante la DGT.</div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-editorial btn-primary-cta js-open-triage" data-curso="Permiso B (Coche)" style="width:100%;">
+              Empieza hoy con nosotros — Consulta por WhatsApp →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PREGUNTAS FRECUENTES (FAQ) + PORTAL NOTAS DGT
+         ====================================================================== -->
+    <section class="section-editorial-padding faq-editorial-section" id="faq">
+      <div class="container">
+        <div class="faq-editorial-container">
+          <div class="section-editorial-header reveal-on-scroll" style="margin-bottom: 2.5rem; text-align: center;">
+            <span class="section-editorial-index">PREGUNTAS FRECUENTES</span>
+            <h2 class="section-editorial-title">
+              Resolvemos tus dudas antes de <em>matricularte</em>
+            </h2>
+          </div>
+
+          <div class="faq-editorial-item reveal-on-scroll delay-1">
+            <button type="button" class="faq-editorial-question">
+              <span>¿Dónde está ubicada Autoescola EMES?</span>
+              <span class="faq-editorial-indicator">+</span>
+            </button>
+            <div class="faq-editorial-answer">
+              Estamos en el Grau de Castelló, en el Carrer de Joan d'Àustria, 37 (bajo), 12100 Castelló de la Plana. Puedes llegar fácilmente tanto a pie como en transporte público.
+            </div>
+          </div>
+
+          <div class="faq-editorial-item reveal-on-scroll delay-1">
+            <button type="button" class="faq-editorial-question">
+              <span>¿Cuál es el horario de atención en secretaría?</span>
+              <span class="faq-editorial-indicator">+</span>
+            </button>
+            <div class="faq-editorial-answer">
+              Atendemos de lunes a jueves por la mañana (10:00 a 13:00) y por la tarde (16:30 a 19:00), y los viernes por la mañana (10:30 a 13:00). Para agilizar tu matrícula o consultar dudas, también puedes escribirnos por WhatsApp desde nuestro formulario.
+            </div>
+          </div>
+
+          <div class="faq-editorial-item reveal-on-scroll delay-2">
+            <button type="button" class="faq-editorial-question">
+              <span>¿Cómo puedo empezar mi matrícula si parto desde cero?</span>
+              <span class="faq-editorial-indicator">+</span>
+            </button>
+            <div class="faq-editorial-answer">
+              Muy fácil: selecciona tu permiso en nuestro formulario de la web para confirmar disponibilidad y tarifas por WhatsApp, o acércate a la autoescuela con tu DNI o NIE en vigor. Te orientaremos con las clases teóricas, el aula de test y la programación de tus prácticas.
+            </div>
+          </div>
+
+          <div class="faq-editorial-item reveal-on-scroll delay-2">
+            <button type="button" class="faq-editorial-question">
+              <span>Ya tengo el teórico aprobado, ¿puedo hacer solo las prácticas con vosotros?</span>
+              <span class="faq-editorial-indicator">+</span>
+            </button>
+            <div class="faq-editorial-answer">
+              Sí. Si ya tienes el examen teórico aprobado (por libre o en otra autoescuela), podemos tramitar tu expediente para que empieces directamente con las clases prácticas en nuestros coches de prácticas.
+            </div>
+          </div>
+
+          <div class="faq-editorial-item reveal-on-scroll delay-3">
+            <button type="button" class="faq-editorial-question">
+              <span>¿Qué documentación necesito para presentarme al examen de la DGT?</span>
+              <span class="faq-editorial-indicator">+</span>
+            </button>
+            <div class="faq-editorial-answer">
+              Necesitarás tu DNI, NIE o pasaporte en vigor y el certificado médico psicotécnico emitido por un Centro de Reconocimiento de Conductores autorizado. Nosotros te indicamos los pasos y plazos para que no tengas que preocuparte por el papeleo.
+            </div>
+          </div>
+
+          <div class="faq-editorial-item reveal-on-scroll delay-3">
+            <button type="button" class="faq-editorial-question">
+              <span>¿Impartís otros permisos además del coche (Permiso B)?</span>
+              <span class="faq-editorial-indicator">+</span>
+            </button>
+            <div class="faq-editorial-answer">
+              Sí, además del Permiso B, ofrecemos formación para permisos de moto (AM, A1, A2, A), permisos profesionales (C, C+E, D), cursos CAP y clases de reciclaje para perder el miedo a conducir. Consúltanos en el formulario según tu objetivo.
+            </div>
+          </div>
+
+          <!-- Banner Portal Oficial DGT -->
+          <div class="dgt-results-banner reveal-on-scroll delay-4">
+            <div>
+              <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--emes-blue-glow); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:4px;">PORTAL OFICIAL DGT</span>
+              <h3 style="font-family:var(--font-display); font-size:1.35rem; font-weight:800; color:#FFFFFF; margin-bottom:4px;">¿Ya te has examinado? Consulta tus notas</h3>
+              <p style="font-size:0.9rem; color:#CBD5E1; margin:0;">Acceso directo a la plataforma oficial de calificaciones de la Dirección General de Tráfico.</p>
+            </div>
+            <a href="https://sedeclave.dgt.gob.es/WEB_NOTP_CONSULTA/consultaNota.faces" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-primary-cta">
+              <span>Comprobar Resultado</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         LOCALIZACIÓN Y HORARIOS (EL GRAO DE CASTELLÓN)
+         ====================================================================== -->
+    <section class="contact-editorial-section" id="contacto">
+      <div class="container">
+        <div class="section-editorial-header reveal-on-scroll" style="text-align:center; max-width:780px; margin:0 auto 2.25rem auto;">
+          <span class="section-editorial-index">LOCALIZACIÓN Y HORARIOS</span>
+          <h2 class="section-editorial-title">
+            Encuéntranos en el <em>Grau de Castelló</em>
+          </h2>
+          <p class="section-editorial-desc" style="margin:0 auto;">
+            Visítanos en nuestra secretaría para resolver dudas o formalizar tu matrícula, o consúltanos en 15 segundos por WhatsApp.
+          </p>
+        </div>
+
+        <div class="contact-architectural-grid reveal-on-scroll delay-1">
+          <div class="contact-text-column">
+            <div class="contact-cards-subgrid">
+              <div class="center-mini-card is-main">
+                <span class="center-mini-tag">Sede Oficial · El Grao de Castellón</span>
+                <div class="center-mini-name">Autoescola EMES</div>
+                <div class="center-mini-addr">Carrer de Joan d'Àustria, 37 (bajo) · 12100 Castelló de la Plana, Castellón</div>
+                <div style="display:flex; flex-wrap:wrap; gap:14px; margin-top:8px;">
+                  <a href="tel:+34642304183" class="center-mini-tel">Móvil: +34 642 30 41 83</a>
+                  <a href="tel:+34964820561" class="center-mini-tel">Fijo: 964 820 561</a>
+                </div>
+              </div>
+
+              <div class="center-mini-card">
+                <span class="center-mini-tag">Correo de Secretaría</span>
+                <a href="mailto:autoescolaemes@gmail.com" style="font-size:0.88rem;font-weight:700;color:#FFFFFF;word-break:break-all;">autoescolaemes@gmail.com</a>
+              </div>
+
+              <div class="center-mini-card">
+                <span class="center-mini-tag">Instagram Oficial</span>
+                <a href="https://www.instagram.com/autoescolaemes/" target="_blank" rel="noopener noreferrer" style="font-size:0.88rem;font-weight:700;color:#FFFFFF;">@autoescolaemes ↗</a>
+              </div>
+            </div>
+
+            <a href="https://www.google.com/maps/place/Autoescola+EMES/@39.9737385,-0.0658107,13z/data=!4m10!1m2!2m1!1sautoescuela!3m6!1s0x129fffe5ee002fd1:0x7408b613ab7a75f4!8m2!3d39.9737385!4d0.010407!15sCgthdXRvZXNjdWVsYVoNIgthdXRvZXNjdWVsYZIBDmRyaXZpbmdfc2Nob29smgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDIxNFRXVnRhSGRTYTJSUFdXdDBTbVZ1WkZka1ZFNUVWbFJHV2xsWVl4QULgAQD6AQQIABA7!16s%2Fg%2F11ffw97p9m?entry=ttu&g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-light-outline" style="width:100%; border-radius:12px;">
+              <span>Abrir ubicación en Google Maps</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="contact-hours-column">
+            <div>
+              <span class="center-mini-tag" style="margin-bottom:0.75rem;">HORARIOS DE SECRETARÍA</span>
+              <h3 style="font-family:var(--font-display); font-size:1.35rem; font-weight:900; color:#FFFFFF; margin-bottom:1rem;">Atención Presencial</h3>
+
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="schedule-day">Lunes a Jueves</span>
+                  <span class="schedule-time">10:00–13:00 | 16:30–19:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-day">Viernes</span>
+                  <span class="schedule-time">10:30–13:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-day">Sábados y Domingos</span>
+                  <span class="schedule-time">Cerrado</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-editorial btn-wa-primary js-open-triage" data-curso="Permiso B (Coche)" style="width:100%;border-radius:12px;">
+              Consulta rápida WhatsApp (15s) →
+            </button>
+          </div>
+        </div>
+
+        <div class="map-embed-wrap reveal-on-scroll delay-2">
+          <iframe
+            title="Ubicación de Autoescola EMES en Carrer de Joan d'Àustria, 37, El Grao de Castellón"
+            src="https://maps.google.com/maps?q=Autoescola+EMES+Carrer+de+Joan+d'Austria+37+El+Grao+de+Castellon&t=m&z=16&output=embed&iwloc=near"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER LEGAL COMPLETO
+       ======================================================================== -->
+  <footer class="site-editorial-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div>
+          <div style="display:inline-flex; align-items:center; margin-bottom:1.35rem;">
+            <img src="assets/logofavicon.png" alt="Autoescola EMES" style="height:64px; width:auto; max-width:260px; object-fit:contain;" />
+          </div>
+          <p style="font-size:0.92rem; color:#94A3B8; line-height:1.7; margin-bottom:1.25rem;">
+            <strong style="color:#FFFFFF;">Autoescola EMES</strong>. Centro de Formación Vial en el Grau de Castelló. Permiso B, motos AM/A1/A2/A, permisos profesionales C/C+E/D, CAP y clases de reciclaje.
+          </p>
+          <div style="font-family:var(--font-mono); font-size:0.75rem; color:#CBD5E1; line-height:1.65;">
+            Centro: <strong>Autoescola EMES Grau</strong><br />
+            Dirección: C/ Joan d'Àustria, 37 (bajo) · 12100 El Grao de Castellón
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Permisos y Cursos</h4>
+          <ul class="footer-links-list">
+            <li><button type="button" class="js-open-triage" data-curso="Permiso B (Coche)">Permiso B (Coche)</button></li>
+            <li><button type="button" class="js-open-triage" data-curso="Moto AM / A1 / A2 / A">Motos AM, A1, A2 y A</button></li>
+            <li><button type="button" class="js-open-triage" data-curso="Camión / Autobús (C / C+E / D)">Camión C, Tráiler C+E y Autobús D</button></li>
+            <li><button type="button" class="js-open-triage" data-curso="CAP Inicial / Continuo">CAP Inicial y Continuo</button></li>
+            <li><button type="button" class="js-open-triage" data-curso="Clases de reciclaje / Amaxofobia">Clases de reciclaje</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Autoescuela</h4>
+          <ul class="footer-links-list">
+            <li><a href="#metodo">Método Autoescola EMES</a></li>
+            <li><a href="#instalaciones">Instalaciones y Aprobados</a></li>
+            <li><a href="#opiniones">Valoraciones en Google</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="https://sedeclave.dgt.gob.es/WEB_NOTP_CONSULTA/consultaNota.faces" target="_blank" rel="noopener noreferrer">Comprobar Notas DGT ↗</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contacto y Redes</h4>
+          <ul class="footer-links-list">
+            <li><a href="tel:+34642304183">Móvil: +34 642 30 41 83</a></li>
+            <li><a href="tel:+34964820561">Fijo: 964 820 561</a></li>
+            <li><a href="mailto:autoescolaemes@gmail.com">autoescolaemes@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/autoescolaemes/" target="_blank" rel="noopener noreferrer">Instagram: @autoescolaemes</a></li>
+            <li><button type="button" class="js-open-triage" data-curso="Permiso B (Coche)" style="color:var(--emes-wa);font-weight:700;">Consulta rápida WhatsApp ↗</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>© <span id="currentYear">2026</span> Autoescola EMES. Todos los derechos reservados.</div>
+        <div>Carrer de Joan d'Àustria, 37 (bajo) · 12100 El Grao de Castellón</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante (Abre Popup de Triagem) -->
+  <button type="button" class="floating-brand-wa js-open-triage" aria-label="Abrir consulta rápida por WhatsApp">
+    <svg class="wa-icon-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-.872 1.406-.872 2.375 0 .969.897 1.905 1.021 2.053.124.149 1.762 2.69 4.268 3.774.596.257 1.061.411 1.424.527.599.191 1.144.164 1.575.1.48-.072 1.476-.603 1.684-1.185.208-.582.208-1.08.146-1.185-.062-.105-.229-.168-.526-.317zM12.004 2.005c-5.514 0-10 4.486-10 10 0 1.76.459 3.475 1.332 4.992l-1.417 5.176 5.297-1.389c1.463.799 3.111 1.221 4.788 1.221 5.514 0 10-4.486 10-10s-4.486-10-10-10zm0 18.283c-1.503 0-2.977-.406-4.264-1.173l-.306-.182-3.17.831.846-3.09-.199-.316c-.838-1.336-1.282-2.884-1.282-4.483 0-4.636 3.772-8.409 8.375-8.409 2.24 0 4.346.873 5.93 2.457s2.457 3.69 2.457 5.93c0 4.637-3.772 8.41-8.386 8.41z"></path>
+    </svg>
+    <div class="wa-label-box">
+      <span class="wa-label-title">Autoescola EMES</span>
+      <span class="wa-label-sub">Consulta WhatsApp</span>
+    </div>
+  </button>
+
+  <!-- ======================================================================
+       POPUP MODAL DE TRIAGEM INTELIGENTE (4 PASOS — 1 PREGUNTA POR VEZ)
+       ====================================================================== -->
+  <div class="triage-modal-backdrop" id="triageModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="triageModalTitle">
+    <div class="triage-shell">
+      <div class="triage-modal-topbar">
+        <span class="triage-progress-label" id="triageStepCounter">Paso 1 de 4</span>
+        <button type="button" class="triage-close-btn" id="triageCloseBtn" aria-label="Cerrar consulta">✕</button>
+      </div>
+      <div class="triage-progress-track">
+        <div class="triage-progress-fill" id="triageProgressFill"></div>
+      </div>
+
+      <!-- Paso 1 -->
+      <div class="triage-step is-active" data-step="1">
+        <h3 class="triage-step-label" id="triageModalTitle">¿Qué permiso o curso te interesa?</h3>
+        <p class="triage-step-sub">Elige una opción para continuar:</p>
+        <div class="triage-chips-grid" id="triageCursoGroup">
+          <button type="button" class="triage-chip" data-value="Permiso B (Coche)">Permiso B (Coche)</button>
+          <button type="button" class="triage-chip" data-value="Moto AM / A1 / A2 / A">Moto AM / A1 / A2 / A</button>
+          <button type="button" class="triage-chip" data-value="Camión / Autobús (C / C+E / D)">Camión / Autobús (C / C+E / D)</button>
+          <button type="button" class="triage-chip" data-value="CAP Inicial / Continuo">CAP Inicial / Continuo</button>
+          <button type="button" class="triage-chip" data-value="Clases de reciclaje / Amaxofobia">Clases de reciclaje / Amaxofobia</button>
+        </div>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="triage-step" data-step="2">
+        <h3 class="triage-step-label">¿Cuál es tu situación actual?</h3>
+        <p class="triage-step-sub">Así nuestra secretaría te dará la información exacta:</p>
+        <div class="triage-chips-grid" id="triageSituacionGroup">
+          <button type="button" class="triage-chip" data-value="Empiezo desde cero (teórico + práctico)">Empiezo desde cero (teórico + práctico)</button>
+          <button type="button" class="triage-chip" data-value="Ya tengo el teórico aprobado (solo prácticas)">Ya tengo el teórico aprobado (solo prácticas)</button>
+          <button type="button" class="triage-chip" data-value="Ya tengo carnet (reciclaje / ampliar permiso)">Ya tengo carnet (reciclaje / ampliar permiso)</button>
+          <button type="button" class="triage-chip" data-value="Información sobre cursos CAP / profesionales">Información sobre cursos CAP / profesionales</button>
+        </div>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="triage-step" data-step="3">
+        <h3 class="triage-step-label">¿Qué horario prefieres?</h3>
+        <p class="triage-step-sub">Selecciona tu disponibilidad habitual:</p>
+        <div class="triage-chips-grid" id="triageHorarioGroup">
+          <button type="button" class="triage-chip" data-value="Mañanas (10:00 - 13:00)">Mañanas (10:00 - 13:00)</button>
+          <button type="button" class="triage-chip" data-value="Tardes (16:30 - 19:00)">Tardes (16:30 - 19:00)</button>
+          <button type="button" class="triage-chip" data-value="Horario flexible / Indiferente">Horario flexible / Indiferente</button>
+        </div>
+      </div>
+
+      <!-- Paso 4 -->
+      <div class="triage-step" data-step="4">
+        <h3 class="triage-step-label">¡Listo! ¿Cómo te llamas?</h3>
+        <p class="triage-step-sub">Campo opcional. Pulsa abajo para enviar tu consulta por WhatsApp:</p>
+        <input type="text" id="triageNombreInput" class="triage-name-input" placeholder="Tu nombre (opcional)" maxlength="60" />
+        <div class="triage-summary-box" id="triageSummaryBox"></div>
+        <div class="triage-alert-msg" id="triageAlertMsg" role="alert">Por favor, selecciona primero el permiso y tu situación actual antes de enviar.</div>
+        <button type="button" id="triageSubmitBtn" class="btn-editorial btn-wa-primary" style="width:100%;">
+          <svg class="wa-icon-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-.872 1.406-.872 2.375 0 .969.897 1.905 1.021 2.053.124.149 1.762 2.69 4.268 3.774.596.257 1.061.411 1.424.527.599.191 1.144.164 1.575.1.48-.072 1.476-.603 1.684-1.185.208-.582.208-1.08.146-1.185-.062-.105-.229-.168-.526-.317zM12.004 2.005c-5.514 0-10 4.486-10 10 0 1.76.459 3.475 1.332 4.992l-1.417 5.176 5.297-1.389c1.463.799 3.111 1.221 4.788 1.221 5.514 0 10-4.486 10-10s-4.486-10-10-10zm0 18.283c-1.503 0-2.977-.406-4.264-1.173l-.306-.182-3.17.831.846-3.09-.199-.316c-.838-1.336-1.282-2.884-1.282-4.483 0-4.636 3.772-8.409 8.375-8.409 2.24 0 4.346.873 5.93 2.457s2.457 3.69 2.457 5.93c0 4.637-3.772 8.41-8.386 8.41z"/></svg>
+          Enviar consulta por WhatsApp
+        </button>
+      </div>
+
+      <div class="triage-modal-footer">
+        <button type="button" class="triage-back-btn" id="triageBackBtn" hidden>← Anterior</button>
+        <span style="font-size:0.78rem;color:#94A3B8;">Respuesta directa de secretaría</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var WHATSAPP_NUMBER = '34642304183';
+      var TOTAL_STEPS = 4;
+
+      // 1. Menu Overlay
+      var openBtn = document.getElementById('openMenuBtn');
+      var closeBtn = document.getElementById('closeMenuBtn');
+      var overlayMenu = document.getElementById('overlayMenu');
+      var navLinks = document.querySelectorAll('.overlay-nav-link');
+
+      function openMenu() {
+        if (!overlayMenu) return;
+        overlayMenu.classList.add('is-open');
+        overlayMenu.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMenu() {
+        if (!overlayMenu) return;
+        overlayMenu.classList.remove('is-open');
+        overlayMenu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openMenu);
+      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+      navLinks.forEach(function (link) { link.addEventListener('click', closeMenu); });
+
+      // 2. Nav Scroll Background
+      var nav = document.getElementById('mainNav');
+      window.addEventListener('scroll', function () {
+        if (!nav) return;
+        nav.classList.toggle('scrolled', window.scrollY > 80);
+      }, { passive: true });
+
+      // 3. Popup Wizard de Triagem (1 pregunta por vez)
+      var triageModal = document.getElementById('triageModal');
+      var triageCloseBtn = document.getElementById('triageCloseBtn');
+      var triageBackBtn = document.getElementById('triageBackBtn');
+      var triageStepCounter = document.getElementById('triageStepCounter');
+      var triageProgressFill = document.getElementById('triageProgressFill');
+      var triageSummaryBox = document.getElementById('triageSummaryBox');
+      var triageAlertMsg = document.getElementById('triageAlertMsg');
+      var triageSteps = document.querySelectorAll('#triageModal .triage-step');
+      var triageState = { curso: '', situacion: '', horario: '' };
+      var currentStep = 1;
+
+      function goToStep(stepNum) {
+        currentStep = Math.max(1, Math.min(TOTAL_STEPS, stepNum));
+        triageSteps.forEach(function (el) {
+          el.classList.toggle('is-active', parseInt(el.getAttribute('data-step'), 10) === currentStep);
+        });
+        if (triageStepCounter) triageStepCounter.textContent = 'Paso ' + currentStep + ' de ' + TOTAL_STEPS;
+        if (triageProgressFill) triageProgressFill.style.width = ((currentStep / TOTAL_STEPS) * 100) + '%';
+        if (triageBackBtn) triageBackBtn.hidden = (currentStep === 1);
+        if (triageAlertMsg) triageAlertMsg.classList.remove('is-visible');
+
+        if (currentStep === TOTAL_STEPS && triageSummaryBox) {
+          triageSummaryBox.innerHTML =
+            '<strong>Interés:</strong> ' + (triageState.curso || '-') + '<br>' +
+            '<strong>Situación:</strong> ' + (triageState.situacion || '-') + '<br>' +
+            '<strong>Horario preferido:</strong> ' + (triageState.horario || 'Horario flexible / Indiferente');
+        }
+      }
+
+      function openTriageModal(preselectedCurso) {
+        if (!triageModal) return;
+        closeMenu();
+        if (preselectedCurso) {
+          var container = document.getElementById('triageCursoGroup');
+          if (container) {
+            container.querySelectorAll('.triage-chip').forEach(function (c) {
+              var match = c.getAttribute('data-value') === preselectedCurso;
+              c.classList.toggle('is-selected', match);
+              if (match) triageState.curso = preselectedCurso;
+            });
+          }
+          goToStep(2);
+        } else {
+          goToStep(1);
+        }
+        triageModal.classList.add('is-open');
+        triageModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeTriageModal() {
+        if (!triageModal) return;
+        triageModal.classList.remove('is-open');
+        triageModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      function bindStepGroup(containerId, stateKey, nextStep) {
+        var container = document.getElementById(containerId);
+        if (!container) return;
+        var chips = container.querySelectorAll('.triage-chip');
+        chips.forEach(function (chip) {
+          chip.addEventListener('click', function () {
+            chips.forEach(function (c) { c.classList.remove('is-selected'); });
+            chip.classList.add('is-selected');
+            triageState[stateKey] = chip.getAttribute('data-value') || '';
+            setTimeout(function () { goToStep(nextStep); }, 180);
+          });
+        });
+      }
+
+      bindStepGroup('triageCursoGroup', 'curso', 2);
+      bindStepGroup('triageSituacionGroup', 'situacion', 3);
+      bindStepGroup('triageHorarioGroup', 'horario', 4);
+
+      document.querySelectorAll('.js-open-triage').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          openTriageModal(btn.getAttribute('data-curso'));
+        });
+      });
+
+      if (triageCloseBtn) triageCloseBtn.addEventListener('click', closeTriageModal);
+      if (triageBackBtn) triageBackBtn.addEventListener('click', function () { goToStep(currentStep - 1); });
+      if (triageModal) {
+        triageModal.addEventListener('click', function (e) {
+          if (e.target === triageModal) closeTriageModal();
+        });
+      }
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && triageModal && triageModal.classList.contains('is-open')) {
+          closeTriageModal();
+        }
+      });
+
+      var submitBtn = document.getElementById('triageSubmitBtn');
+      if (submitBtn) {
+        submitBtn.addEventListener('click', function () {
+          if (!triageState.curso || !triageState.situacion) {
+            if (triageAlertMsg) triageAlertMsg.classList.add('is-visible');
+            if (!triageState.curso) goToStep(1);
+            else if (!triageState.situacion) goToStep(2);
+            return;
+          }
+
+          var horarioFinal = triageState.horario || 'Horario flexible / Indiferente';
+          var nombreInput = document.getElementById('triageNombreInput');
+          var nombreVal = nombreInput ? nombreInput.value.trim() : '';
+
+          var lines = [
+            'Hola, vengo de la web de Autoescola EMES.',
+            '- Interés: ' + triageState.curso,
+            '- Situación: ' + triageState.situacion,
+            '- Horario preferido: ' + horarioFinal
+          ];
+          if (nombreVal) lines.push('- Nombre: ' + nombreVal);
+          lines.push('¿Podríais indicarme disponibilidad y tarifas?');
+
+          var waUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
+          window.open(waUrl, '_blank', 'noopener,noreferrer');
+          closeTriageModal();
+        });
+      }
+
+      // 4. Carrusel Galería con Paginación
+      (function initGalleryCarousel() {
+        var track = document.getElementById('galleryCarouselTrack');
+        var container = document.getElementById('galleryCarouselContainer');
+        var gPrevBtn = document.getElementById('galleryPrevBtn');
+        var gNextBtn = document.getElementById('galleryNextBtn');
+        var pagination = document.getElementById('galleryPagination');
+        if (!track || !container) return;
+
+        var cards = track.querySelectorAll('.gallery-carousel-card');
+        if (!cards.length) return;
+
+        function getScrollStep() {
+          var style = window.getComputedStyle(track);
+          var gap = parseFloat(style.columnGap || style.gap || 24);
+          return (cards[0] ? cards[0].offsetWidth : 320) + gap;
+        }
+
+        function updatePagination() {
+          if (!pagination) return;
+          pagination.innerHTML = '';
+          var step = getScrollStep();
+          var pages = Math.max(1, Math.round(track.scrollWidth / step));
+          if (pages <= 1) return;
+          for (var i = 0; i < pages; i++) {
+            (function (idx) {
+              var dot = document.createElement('button');
+              dot.type = 'button';
+              dot.className = 'gallery-pagination-dot' + (idx === 0 ? ' is-active' : '');
+              dot.setAttribute('aria-label', 'Ir a foto ' + (idx + 1));
+              dot.addEventListener('click', function () {
+                track.scrollTo({ left: idx * step, behavior: 'smooth' });
+              });
+              pagination.appendChild(dot);
+            })(i);
+          }
+        }
+
+        function syncDots() {
+          if (!pagination) return;
+          var dots = pagination.querySelectorAll('.gallery-pagination-dot');
+          if (!dots.length) return;
+          var step = getScrollStep();
+          var maxScroll = track.scrollWidth - track.clientWidth;
+          var activeIndex = track.scrollLeft >= maxScroll - 15 ? dots.length - 1 : Math.round(track.scrollLeft / step);
+          dots.forEach(function (dot, idx) { dot.classList.toggle('is-active', idx === activeIndex); });
+        }
+
+        if (gNextBtn) gNextBtn.addEventListener('click', function () {
+          var maxScroll = track.scrollWidth - track.clientWidth;
+          if (track.scrollLeft + 15 >= maxScroll) track.scrollTo({ left: 0, behavior: 'smooth' });
+          else track.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+        });
+
+        if (gPrevBtn) gPrevBtn.addEventListener('click', function () {
+          if (track.scrollLeft <= 15) track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' });
+          else track.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+        });
+
+        var scrollTimer = null;
+        track.addEventListener('scroll', function () {
+          if (scrollTimer) clearTimeout(scrollTimer);
+          scrollTimer = setTimeout(syncDots, 70);
+        }, { passive: true });
+
+        updatePagination();
+        window.addEventListener('resize', updatePagination);
+      })();
+
+      // 5. FAQ Acordeón
+      var faqItems = document.querySelectorAll('.faq-editorial-item');
+      faqItems.forEach(function (item) {
+        var btn = item.querySelector('.faq-editorial-question');
+        if (btn) {
+          btn.addEventListener('click', function () {
+            var isOpen = item.classList.contains('active');
+            faqItems.forEach(function (other) { other.classList.remove('active'); });
+            if (!isOpen) item.classList.add('active');
+          });
+        }
+      });
+
+      // 6. Reveal on Scroll (Lento y Escalonado)
+      var reveals = document.querySelectorAll('.reveal-on-scroll');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries, obs) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(function (el) { observer.observe(el); });
+      } else {
+        reveals.forEach(function (el) { el.classList.add('is-revealed'); });
+      }
+
+      // 7. Año dinámico
+      var yearSpan = document.getElementById('currentYear');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
