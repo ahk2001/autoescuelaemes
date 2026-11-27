@@ -1407,92 +1407,166 @@
       margin-bottom: 2.25rem;
     }
 
-    .reputation-summary-card {
+    .testimonial-carousel-stage {
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 100%;
+      margin-bottom: 1.75rem;
+    }
+
+    .testimonial-slide {
+      grid-area: 1 / 1;
+      width: 100%;
+      display: flex;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(14px);
+      transition: opacity 0.45s var(--ease-editorial), transform 0.45s var(--ease-editorial), visibility 0.45s ease;
+    }
+
+    .testimonial-slide.is-active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .testimonial-card {
       width: 100%;
       max-width: 840px;
       margin: 0 auto;
       padding: 2.25rem 2.5rem;
-      background: rgba(11, 31, 58, 0.72);
+      background: rgba(11, 31, 58, 0.78);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       border: 1px solid rgba(255, 255, 255, 0.16);
       border-top: 3px solid var(--emes-blue);
-      border-radius: 22px;
+      border-radius: 20px;
       box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
       text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     @media (max-width: 640px) {
-      .reputation-summary-card { padding: 1.5rem 1.25rem; }
+      .testimonial-card { padding: 1.5rem 1.25rem; }
     }
 
-    .rep-top-bar {
+    .testimonial-card-top {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 1rem;
-      padding-bottom: 1.25rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      gap: 14px;
+      margin-bottom: 1.35rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
     }
 
-    .rep-score-group {
+    .testimonial-stars-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    .testimonial-stars-badge .stars { color: #FBBF24; font-size: 1.05rem; letter-spacing: 2px; }
+    .testimonial-stars-badge .score { font-weight: 800; font-family: var(--font-mono); }
+    .testimonial-stars-badge .platform { color: #94A3B8; font-size: 0.82rem; }
+
+    .testimonial-quote-svg { color: var(--emes-blue-glow); opacity: 0.85; flex-shrink: 0; }
+
+    .testimonial-quote-text {
+      font-size: clamp(1.04rem, 1.7vw, 1.22rem);
+      line-height: 1.75;
+      color: #F8FAFC;
+      margin-bottom: 1.6rem;
+    }
+
+    .testimonial-author-row {
       display: flex;
       align-items: center;
       gap: 14px;
     }
 
-    .rep-score-num {
-      font-family: var(--font-display);
-      font-size: 2.8rem;
-      font-weight: 900;
+    .testimonial-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--emes-blue), var(--emes-navy));
+      border: 1px solid rgba(59, 130, 246, 0.45);
       color: #FFFFFF;
-      line-height: 1;
-    }
-
-    .rep-stars {
-      color: #FBBF24;
-      font-size: 1.1rem;
-      letter-spacing: 2px;
-      display: block;
-    }
-
-    .rep-sub {
-      font-size: 0.86rem;
-      color: #CBD5E1;
-    }
-
-    .rep-highlights-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      margin-bottom: 1.75rem;
-    }
-
-    @media (min-width: 640px) {
-      .rep-highlights-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    .rep-highlight-item {
-      background: rgba(6, 9, 19, 0.58);
-      border: 1px solid rgba(255, 255, 255, 0.10);
-      border-radius: 14px;
-      padding: 1rem 1.15rem;
-    }
-
-    .rep-highlight-title {
       font-weight: 800;
-      font-size: 0.96rem;
-      color: #FFFFFF;
-      margin-bottom: 0.35rem;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
     }
 
-    .rep-highlight-desc {
-      font-size: 0.86rem;
-      color: #94A3B8;
-      line-height: 1.55;
+    .testimonial-author-name {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
     }
+
+    .testimonial-verified-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #D1FAE5;
+      background: rgba(4, 188, 5, 0.18);
+      border: 1px solid rgba(4, 188, 5, 0.4);
+      padding: 2px 8px;
+      border-radius: 9999px;
+    }
+
+    .testimonial-author-meta {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: #94A3B8;
+    }
+
+    .testimonial-nav-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .testimonial-dots { display: flex; align-items: center; gap: 8px; }
+
+    .testimonial-dot {
+      width: 10px; height: 10px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.25);
+      transition: all 0.3s ease;
+    }
+
+    .testimonial-dot.is-active { width: 28px; background: var(--emes-blue-glow); }
+
+    .testimonial-arrows { display: flex; align-items: center; gap: 10px; }
+
+    .testimonial-arrow-btn {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.05rem;
+    }
+
+    .testimonial-arrow-btn:hover { background: var(--emes-blue); border-color: var(--emes-blue-glow); }
 
     /* ==========================================================================
        10. POPUP MODAL DE TRIAGEM INTELIGENTE (1 PREGUNTA POR VEZ)
@@ -2632,48 +2706,63 @@
       <div class="container">
         <div class="reviews-content-wrap">
           <div class="section-editorial-header reveal-on-scroll">
-            <span class="section-editorial-index">REPUTACIÓN EN EL GRAU DE CASTELLÓ</span>
+            <span class="section-editorial-index">RESEÑAS REALES EN GOOGLE</span>
             <h2 class="section-editorial-title">
-              Lo que más valoran nuestros <em>alumnos en Google</em>
+              Lo que opinan nuestros <em>alumnos aprobados</em>
             </h2>
           </div>
 
-          <div class="reputation-summary-card reveal-on-scroll delay-1">
-            <div class="rep-top-bar">
-              <div class="rep-score-group">
-                <div class="rep-score-num">4,6</div>
-                <div>
-                  <span class="rep-stars" aria-label="4.6 de 5 estrellas">★★★★★</span>
-                  <span class="rep-sub">Media en Google y directorios (+90 reseñas)</span>
+          <div class="testimonial-carousel-stage reveal-on-scroll delay-1" id="testimonialStage">
+            <div class="testimonial-slide is-active" data-index="0">
+              <div class="testimonial-card">
+                <div class="testimonial-card-top">
+                  <div class="testimonial-stars-badge"><span class="stars">★★★★★</span><span class="score">5.0</span><span class="platform">Google Reviews</span></div>
+                  <svg class="testimonial-quote-svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                </div>
+                <p class="testimonial-quote-text">“Las clases fueron increíbles y el profesor fue el mejor, ¡estoy muy feliz! Recomiendo esta autoescuela al 100%. ¡Gracias por todo!”</p>
+                <div class="testimonial-author-row">
+                  <div class="testimonial-avatar">TC</div>
+                  <div>
+                    <div class="testimonial-author-name">Tatiana Carrero herreros <span class="testimonial-verified-pill">✓ Reseña verificada</span></div>
+                    <div class="testimonial-author-meta">Google Reviews · El Grao de Castellón</div>
+                  </div>
                 </div>
               </div>
-              <a href="https://www.google.com/maps/place/Autoescola+EMES/@39.9737385,-0.0658107,13z/data=!4m10!1m2!2m1!1sautoescuela!3m6!1s0x129fffe5ee002fd1:0x7408b613ab7a75f4!8m2!3d39.9737385!4d0.010407!15sCgthdXRvZXNjdWVsYVoNIgthdXRvZXNjdWVsYZIBDmRyaXZpbmdfc2Nob29smgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDIxNFRXVnRhSGRTYTJSUFdXdDBTbVZ1WkZka1ZFNUVWbFJHV2xsWVl4QULgAQD6AQQIABA7!16s%2Fg%2F11ffw97p9m?entry=ttu&g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-light-outline" style="padding:10px 18px; font-size:0.84rem;">
-                Ver reseñas en Google Maps ↗
-              </a>
             </div>
 
-            <div class="rep-highlights-grid">
-              <div class="rep-highlight-item">
-                <div class="rep-highlight-title">Paciencia y confianza al volante</div>
-                <div class="rep-highlight-desc">Los alumnos destacan el trato cercano de los profesores para calmar los nervios y adaptar el ritmo de cada clase práctica.</div>
-              </div>
-              <div class="rep-highlight-item">
-                <div class="rep-highlight-title">Preparación teórica eficaz</div>
-                <div class="rep-highlight-desc">Valoración muy positiva del aula equipada con ordenadores, test online actualizados y apoyo constante antes del examen.</div>
-              </div>
-              <div class="rep-highlight-item">
-                <div class="rep-highlight-title">Flexibilidad para programar clases</div>
-                <div class="rep-highlight-desc">Facilidad para cuadrar y reajustar las prácticas según tu disponibilidad de estudios o trabajo.</div>
-              </div>
-              <div class="rep-highlight-item">
-                <div class="rep-highlight-title">Atención en secretaría</div>
-                <div class="rep-highlight-desc">Amabilidad y agilidad en la gestión de matrículas, trámites y consultas ante la DGT.</div>
+            <div class="testimonial-slide" data-index="1">
+              <div class="testimonial-card">
+                <div class="testimonial-card-top">
+                  <div class="testimonial-stars-badge"><span class="stars">★★★★★</span><span class="score">5.0</span><span class="platform">Google Reviews</span></div>
+                  <svg class="testimonial-quote-svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                </div>
+                <p class="testimonial-quote-text">“Nunca es tarde para sacarse el carnet de conducir. Después de cumplir 30 años y vivir en el extranjero intermitentemente, <strong>Miguel</strong> me lo puso todo muy fácil. Fue un excelente profesor, siempre muy atento. Recomiendo la autoescuela sin dudarlo; también tengo familiares y amigos que se sacaron el carnet aquí.”</p>
+                <div class="testimonial-author-row">
+                  <div class="testimonial-avatar">PS</div>
+                  <div>
+                    <div class="testimonial-author-name">Pam S. <span class="testimonial-verified-pill">✓ Reseña verificada</span></div>
+                    <div class="testimonial-author-meta">Local Guide · Profesor: Miguel</div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            <button type="button" class="btn-editorial btn-primary-cta js-open-triage" data-curso="Permiso B (Coche)" style="width:100%;">
-              Empieza hoy con nosotros — Consulta por WhatsApp →
-            </button>
+          <div class="testimonial-nav-row reveal-on-scroll delay-2">
+            <div class="testimonial-dots" id="testimonialDots">
+              <button type="button" class="testimonial-dot is-active" data-slide="0" aria-label="Opinión 1"></button>
+              <button type="button" class="testimonial-dot" data-slide="1" aria-label="Opinión 2"></button>
+            </div>
+            <div class="testimonial-arrows">
+              <button type="button" class="testimonial-arrow-btn" id="prevTestimonialBtn" aria-label="Opinión anterior">←</button>
+              <button type="button" class="testimonial-arrow-btn" id="nextTestimonialBtn" aria-label="Siguiente opinión">→</button>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.75rem;" class="reveal-on-scroll delay-3">
+            <a href="https://www.google.com/maps/place/Autoescola+EMES/@39.9737385,-0.0658107,13z/data=!4m10!1m2!2m1!1sautoescuela!3m6!1s0x129fffe5ee002fd1:0x7408b613ab7a75f4!8m2!3d39.9737385!4d0.010407!15sCgthdXRvZXNjdWVsYVoNIgthdXRvZXNjdWVsYZIBDmRyaXZpbmdfc2Nob29smgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDIxNFRXVnRhSGRTYTJSUFdXdDBTbVZ1WkZka1ZFNUVWbFJHV2xsWVl4QULgAQD6AQQIABA7!16s%2Fg%2F11ffw97p9m?entry=ttu&g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-light-outline" style="padding:10px 22px; font-size:0.86rem;">
+              Ver más reseñas en Google Maps ↗
+            </a>
           </div>
         </div>
       </div>
@@ -3153,7 +3242,44 @@
         });
       }
 
-      // 4. Carrusel Galería con Paginación
+      // 4. Carrusel de Testimonios
+      var testimonialSlides = document.querySelectorAll('.testimonial-slide');
+      var testimonialDots = document.querySelectorAll('.testimonial-dot');
+      var prevBtn = document.getElementById('prevTestimonialBtn');
+      var nextBtn = document.getElementById('nextTestimonialBtn');
+      var stage = document.getElementById('testimonialStage');
+      var currentTestimonialIndex = 0;
+      var testimonialInterval = null;
+
+      function showTestimonial(index) {
+        if (!testimonialSlides.length) return;
+        if (index < 0) index = testimonialSlides.length - 1;
+        if (index >= testimonialSlides.length) index = 0;
+        currentTestimonialIndex = index;
+        testimonialSlides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === currentTestimonialIndex); });
+        testimonialDots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === currentTestimonialIndex); });
+      }
+
+      function startTestimonialTimer() {
+        if (testimonialInterval) clearInterval(testimonialInterval);
+        testimonialInterval = setInterval(function () { showTestimonial(currentTestimonialIndex + 1); }, 5500);
+      }
+
+      if (prevBtn) prevBtn.addEventListener('click', function () { showTestimonial(currentTestimonialIndex - 1); startTestimonialTimer(); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { showTestimonial(currentTestimonialIndex + 1); startTestimonialTimer(); });
+      testimonialDots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          showTestimonial(parseInt(dot.getAttribute('data-slide'), 10));
+          startTestimonialTimer();
+        });
+      });
+      if (stage) {
+        stage.addEventListener('mouseenter', function () { if (testimonialInterval) clearInterval(testimonialInterval); });
+        stage.addEventListener('mouseleave', startTestimonialTimer);
+      }
+      startTestimonialTimer();
+
+      // 5. Carrusel Galería con Paginación
       (function initGalleryCarousel() {
         var track = document.getElementById('galleryCarouselTrack');
         var container = document.getElementById('galleryCarouselContainer');
